@@ -1,108 +1,323 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Prevail Weightloss Group
 
-Welcome USER_NAME,
+# Contents
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+  - [User Experience](#user-experience)
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+    - [Wireframes](#wireframes)
 
-## Gitpod Reminders
+    - [Colour Scheme](#colour-scheme)
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+  - [Agile](#agile)
 
-`python3 -m http.server`
+    - [The Ideal User Persona](#the-ideal-userpersona)
 
-A blue button should appear to click: _Make Public_,
+    - [User Goals](#user-goals)
 
-Another blue button should appear to click: _Open Browser_.
+    - [Developer Goals](#developer-goals)
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+    - [Goals not completed](#goals-not-completed)
 
-A blue button should appear to click: _Make Public_,
+  - [Logic and Features](#logic-and-features)
 
-Another blue button should appear to click: _Open Browser_.
+    - [Logic](#logic)
+      
+      - [Data Models](#data-model)
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+    - [Features](#features)
 
-To log into the Heroku toolbelt CLI:
+      
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+  - [Tools and Technology](#tools-and-technology)
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+  - [Testing](#testing)
 
-------
+  - [Deployment](#deployment)
 
-## Release History
+    - [ElephantSQL Database](#elephantsql-database)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+    - [Cloudinary API](#cloudinary-api)
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+    - [Heroku Deployment](#heroku-deployment)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+    - [Local Deployment](#local-deployment)
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+    - [Cloning](#cloning)
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+    - [Forking](#forking)
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+  - [Future Development](#future-development)
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+  - [Credits](#credits)
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+  - [Acknowledgements](#acknowledgements)
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+## Purpose and Goal
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+## Target Audience
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### Demographics
+Gender: Female
+Age range: 30-60
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Persona of typical User.
+- I believe the persona of the user of this site is mainly female with an age range of approximately 30 to 60 years of age. 
+- They are looking to get healthier and want to have support, inspiration and guidance while doing so.
+- They want a physical class or online class but an easy way of paying for it.
+- They want to be able to purchase the merchandise from the class online.
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+## Business and Customer Goals
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+## UI/UX Desgin
 
-------
+### Wireframes
 
-## FAQ about the uptime script
+### Color Scheme
 
-**Why have you added this script?**
+### Typography 
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+## Database Design
 
-**How will this affect me?**
+### Entity Relationship Diagram (ERD)
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+## User Stories
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+To help with the development of this project, I created user stories to map out tasks I needed to achieve in order to build the website to a good standard. I further split these user stories into epics in order to take an agile approach to its development.
 
-**So….?**
+View a full list of user stories [here](https://github.com/AngMaher/Prevail-pp5/issues).
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+### EPIC 1: General Site Functionality
 
-**Can I opt out?**
+    - As a Site User - for the first time I can see what the site's purpose is so that I can decide whether or not to continue on the site. `(MUST HAVE)`
+    - As a Site User I can easily see the options to navigate around the site so that I can find what I want with ease. `(MUST HAVE)`
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### EPIC 2: Shop and Products
 
+    - As a Site User I can view a list of all products so that I can browse through all products. `(MUST HAVE)`
+    - As a Site User I can see a detailed view of the product so that I can get more details before I add to cart. `(MUST HAVE)`
+    - As a Site User I can change the quantity of the product so that I can buy multiple at the same time.`(MUST HAVE)`
+    - As a Site User I can easily filter products into different categories so that I can just look at what I'm interested in. `(SHOULD HAVE)`
+
+
+### EPIC 3: Checkout Bag
+
+    -As a Site User I can delete on item from the checkout bag so that I have an option to change my mind.  `(MUST HAVE)`
+    -As a Site User I can see a breakdown of price so that I can see how much shipping will be before I buy. `(SHOULD HAVE)`
+    - As a Sit User I can see a summary of what I'm buying when I fill in my details so that I can check everything is correct before I commit. `(SHOULD HAVE)`
+    - As a site user I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox  `(MUST HAVE)`
+
+
+### EPIC 4: Subscriptions and Payment
+
+    - As a Site User I can become a Prevail member with ease so that I can quickly sign up without going through the whole website. `(MUST HAVE)`
+
+
+### EPIC 5: Site User Account
+
+    - As a site user I want to be able to create an account on the site so that I can save my billing and shipping details and see a history of my purchases on my account `(MUST HAVE)`
+    - As a registered user I want to be able to edit the details saved to my account so that I can keep my details up to date `(COULD HAVE)`
+
+
+### EPIC 6: Site Admin and Prevail Management
+
+    - As a site admin I want to be able to create new products from the front end so that I can easily add new products to the site `(MUST HAVE)`
+    - As a site admin - Prevail management I want to be able to edit existing products so that I can ensure that all product listings are up to date and accurate `(MUST HAVE)`
+    - As a site admin - Prevail Management I want to be able to delete products from the site so that I can remove any products that are no longer being supplied by the site `(MUST HAVE)`
+ 
+
+### EPIC 7: Class Updates
+
+    - As a prevail member I want to be able to view class on the website so that I can feel part of the community and see how other classes are doing. `(SHOULD HAVE)`
+    - As a Site admin - Prevail Manager I can display a post on the logged-in page of members so that I can display how each class is doing each week. `(SHOULD HAVE)`
+    - As a site admin -prevail manager I want to be able to edit existing updates so that I can fix an error without having to delete and re-do `(COULD HAVE)`
+    - As a site admin - prevail manager I want to be able to delete existing updates so that I can delete them when they get too old. `(SHOULD HAVE)`
+
+### EPIC 8: Success Stories
+
+    - As a Site admin/prevail manager I can display success stories of members so that I can show Site Users how successful our group can be and encourage them to join. `(COULD HAVE)`
+
+
+### EPIC 9: SEO and Marketing
+
+    - As a site user I want to be able to sign up for the site's mailing list so that I can receive offers and news in my inbox `(SHOULD HAVE)`
+    - As a site admin I want to be able to set appropriate keywords on site pages so that I can increase the chances potential customers will find the site when searching to purchase records on Google `(MUST HAVE)`
+
+## Tools & Technologies & Libraries Used
+
+- [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
+- [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
+- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
+- [JavaScript](https://www.javascript.com) used for user interaction on the site.
+- [Python](https://www.python.org) used as the back-end programming language.
+- [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
+- [GitHub](https://github.com) used for secure online code storage.
+- [GitHub Pages](https://pages.github.com) used for hosting the deployed front-end site.
+- [Gitpod](https://gitpod.io) used as a cloud-based IDE for development.
+- [Bootstrap](https://getbootstrap.com) used as the front-end CSS framework for modern responsiveness and pre-built components.
+- [Django](https://www.djangoproject.com) used as the Python framework for the site.
+- [PostgreSQL](https://www.postgresql.org) used as the relational database management.
+- [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
+- [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
+- [Cloudinary](https://cloudinary.com) used for online static file storage.
+- [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
+- [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+
+
+
+***
+## Deployment and Procedures
+
+The live deployed application can be found deployed on [Heroku]().
+
+***
+### ElephantSQL Database
+
+This project uses [ElephantSQL](https://www.elephantsql.com) for the PostgreSQL Database.
+
+To obtain your own Postgres Database, sign-up with your GitHub account, then follow these steps:
+- Click **Create New Instance** to start a new database.
+- Provide a name (this is commonly the name of the project: tribe).
+- Select the **Tiny Turtle (Free)** plan.
+- You can leave the **Tags** blank.
+- Select the **Region** and **Data Center** closest to you.
+- Once created, click on the new database name, where you can view the database URL and Password.
+
+[Back to top &uarr;](#content)
+
+***
+### Cloudinary API
+
+This project uses the [Cloudinary API](https://cloudinary.com) to store docs assets online, due to the fact that Heroku doesn't persist this type of data.
+
+To obtain your own Cloudinary API key, create an account and log in.
+- For *Primary interest*, you can choose *Programmable docs for image and video API*.
+- Optional: *edit your assigned cloud name to something more memorable*.
+- On your Cloudinary Dashboard, you can copy your **API Environment Variable**.
+- Be sure to remove the `CLOUDINARY_URL=` as part of the API **value**; this is the **key**.
+
+[Back to top &uarr;](#content)
+
+***
+### Heroku Deployment
+
+[Setting up basic Django Project and Deploying to Heroku CI Doc](https://docs.google.com/document/d/1P5CWvS5cYalkQOLeQiijpSViDPogtKM7ZGyqK-yehhQ/edit)
+
+This project uses [Heroku](https://www.heroku.com), a platform as a service (PaaS) that enables developers to build, run, and operate applications entirely in the cloud.
+
+Deployment steps are as follows, after account setup:
+
+1. Select *New* in the top-right corner of your Heroku Dashboard, and select *Create new app* from the dropdown menu.
+1. Your app name must be unique, and then choose a region closest to you (EU or USA), and finally, select *Create App*.
+1. Further down, to support dependencies, select *Add Buildpack*.
+1. The order of the buildpacks is important, select `Python` first, then `Node.js` second. (if they are not in this order, you can drag them to rearrange them)
+1. From the new app *Settings*, click *Reveal Config Vars*, and set your environment variables.
+
+    
+    - CLOUNDINARY_URL: (Enter Cloudinary API URL)
+    - DATABASE_URL: (Enter the database URL from ElephantSQL)
+    - PORT: 8000
+    - DISABLE_COLLECTSTATIC: 1 (must be removed before final deployment)
+    - SECRET_KEY: (Enter your secret key)
+
+Heroku needs two additional files in order to deploy properly.
+- requirements.txt
+- Procfile
+
+You can install this project's *requirements* (where applicable) using:
+- `pip3 install -r requirements.txt`
+
+If you have your own packages that have been installed, then the requirements file needs updated using:
+- `pip3 freeze --local > requirements.txt`
+
+The *Procfile* can be created with the following command:
+- `echo web: gunicorn app_name.wsgi > Procfile`
+- *replace *app_name* with the name of your primary Django app name; the folder where settings.py is located*
+
+For Heroku deployment, follow these steps to connect your own GitHub repository to the newly created app:
+
+Either:
+- Select *Automatic Deployment* from the Heroku app.
+
+Or:
+- In the Terminal/CLI, connect to Heroku using this command: `heroku login -i`
+- Set the remote for Heroku: `heroku git:remote -a <app_name>` (replace app_name with your app, without the angle-brackets)
+- After performing the standard Git `add`, `commit`, and `push` to GitHub, you can now type:
+	- `git push heroku main`
+
+The project should now be connected and deployed to Heroku!
+
+[Back to top &uarr;](#content)
+
+***
+### Local Deployment
+
+This project can be cloned or forked in order to make a local copy on your own system.
+
+For either method, you will need to install any applicable packages found within the *requirements.txt* file.
+- `pip3 install -r requirements.txt`.
+
+You will need to create a new file called `env.py` at the root-level,
+and include the same environment variables listed above from the Heroku deployment steps.
+
+Sample `env.py` file:
+
+```python
+import os
+
+os.environ.setdefault("CLOUDINARY_URL", "insert your own Cloudinary API key here")
+os.environ.setdefault("DATABASE_URL", "insert your own ElephantSQL database URL here")
+os.environ.setdefault("SECRET_KEY", "this can be any random secret key")
+
+# local environment only (do not include these in production/deployment!)
+os.environ.setdefault("DEBUG", "True")
 ```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
 
-**Anything more?**
+Once the project is cloned or forked, in order to run it locally, you'll need to follow these steps:
+- Start the Django app: `python3 manage.py runserver`
+- Stop the app once it's loaded: `CTRL+C` or `⌘+C` (Mac)
+- Make any necessary migrations: `python3 manage.py makemigrations`
+- Migrate the data to the database: `python3 manage.py migrate`
+- Create a superuser: `python3 manage.py createsuperuser`
+- Load fixtures (if applicable): `python3 manage.py loaddata file-name.json` (repeat for each file)
+- Everything should be ready now, so run the Django app again: `python3 manage.py runserver`
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+[Back to top &uarr;](#contents)
 
----
 
-Happy coding!
+***
+#### Cloning
+
+You can clone the repository by following these steps:
+
+1. Go to the [GitHub repository](https://github.com/AngMaher/PP4-Where-Next) 
+2. Locate the Code button above the list of files and click it 
+3. Select if you prefer to clone using HTTPS, SSH, or GitHub CLI and click the copy button to copy the URL to your clipboard
+4. Open Git Bash or Terminal
+5. Change the current working directory to the one where you want the cloned directory
+6. In your IDE Terminal, type the following command to clone my repository:
+	- `git clone https://github.com/AngMaher/Prevail-pp5`
+7. Press Enter to create your local clone.
+
+
+[Back to top &uarr;](#content)
+
+***
+#### Forking
+
+By forking the GitHub Repository, we make a copy of the original repository on our GitHub account to view and/or make changes without affecting the original owner's repository.
+To make a copy or ‘fork’ the repository - 
+
+1. Log into GitHub and locate the repository  
+2. On the right-hand side of the page select the ‘fork’ option to create and copy the original
+
+Alternatively, if using Gitpod, you can click below to create your workspace using this repository
+
+[Back to top &uarr;](#content)
+
+### AWS S3 Bucket Creation
+
+### Stripe Configuration
+
+## References and Credits
