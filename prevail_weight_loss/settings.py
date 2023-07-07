@@ -29,7 +29,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['prevail-weight-loss.herokuapp.com', 'localhost']
+ALLOWED_HOSTS = ['https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/', 'localhost']
 
 
 # Application definition
