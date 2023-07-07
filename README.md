@@ -1,4 +1,4 @@
-# Prevail Weightloss Group
+# Prevail Weight loss Group
 
 # Contents
 
