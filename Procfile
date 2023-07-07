@@ -1,0 +1,1 @@
+web: gunicorn prevail_weight_loss.wsgi:application
