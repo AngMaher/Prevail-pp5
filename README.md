@@ -73,7 +73,72 @@ Age range: 30-60
 
 ### Wireframes
 
+#### Home Page Wireframe
+
+<details>
+<summary>Click to View Home Page wireframes</summary>
+
+![blog page](/docs/readme/HomeWF.png)
+</details>
+
+#### Home Page Wireframe
+
+<details>
+<summary>Click to View the Footer wireframes</summary>
+
+![blog page](/docs/readme/footerWF.png)
+</details>
+
+#### Home Page Wireframe
+
+<details>
+<summary>Click to View Shop wireframes</summary>
+
+![blog page](/docs/readme/ProductWF.png)
+</details>
+
+#### Home Page Wireframe
+
+<details>
+<summary>Click to View Product Detail wireframes</summary>
+
+![blog page](/docs/readme/Detail-ProductWF.png)
+</details>
+
+#### Home Page Wireframe
+
+<details>
+<summary>Click to View Basket wireframes</summary>
+
+![blog page](/docs/readme/BasketWF.png)
+</details>
+
+
+
 ### Color Scheme
+
+I decided to keep the website bright with a main colour of blue throughout the site. 
+
+  - #d5a6bd - Pink Lavender as the contrasting headings and boxes to break up the page.
+  - #343434 - Jet, this colour is used a on the majority of the text throughout the site, and the footer, Navbar, Buttons.
+  - #FFF - white, this is used as the main background colour of the site to keep things clean
+
+
+![colours used](/docs/readme/Project-5-Colours.png)
+
+I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my colours.
+
+I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
+
+```css
+:root {
+    --main-pink: #d5a6bd;
+    --dark-gray: #333333;
+    --background-colour: #fff;
+    --messages: rgb(53,152, 139, 0.6);
+}
+```
+[Back to top &uarr;](#contents)
 
 ### Typography 
 
