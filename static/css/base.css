@@ -58,6 +58,10 @@ body {
     border: 1px solid black !important;
 }
 
+.bg-grey {
+    background: #343434;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
