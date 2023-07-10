@@ -1,0 +1,83 @@
+html {
+    height: 100%;
+}
+
+body {
+    background: url('/media/prevail-logo.jpg') no-repeat center center fixed;
+    background-size: cover;
+    height: calc(100vh - 164px);
+    color: #343434;
+    font-family: 'Lato';
+}
+
+/* from Bulma */
+.icon {
+    align-items: center;
+    display: inline-flex;
+    justify-content: center;
+    height: 1.5rem;
+    width: 1.5rem;
+}
+
+.logo-font {
+    text-transform: camelcase;
+}
+
+.main-logo-link {
+    width: fit-content;
+
+}
+
+.home-page-button {
+    background: #343434;
+    color: white;
+    min-width: 260px;
+    margin-bottom: 10px;
+}
+
+.btn-black {
+    background: black;
+    color: white;
+}
+
+.home-page-button:hover,
+.home-page-button:active,
+.home-page-button:focus,
+.btn-black:hover,
+.btn-black:active,
+.btn-black:focus {
+    background: #D5a6bd;
+    color: white;
+}
+
+.text-black {
+    color: #343434 !important;
+}
+
+.border-black {
+    border: 1px solid black !important;
+}
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+  .container {
+    max-width: 80%;
+  }
+}
+
+/* fixed top navbar only on medium and up */
+@media (min-width: 992px) {
+    .fixed-top-desktop-only {
+        position: fixed;
+        top: 0;
+        right: 0;
+        left: 0;
+        z-index: 1030;
+    }
+
+    .header-container {
+        padding-top: 164px;
+    }
+}
