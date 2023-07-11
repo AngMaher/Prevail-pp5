@@ -3,11 +3,17 @@ html {
 }
 
 body {
-    background: url('/media/prevail-logo.jpg') no-repeat center center fixed;
+    background: url('/static/media/sneakers-weights-with-copy-space.jpg') no-repeat center center fixed;
     background-size: cover;
     height: calc(100vh - 164px);
     color: #343434;
     font-family: 'Lato';
+    z-index: 1;
+}
+
+.landing-img {
+    background: url('/static/media/landing-img.png');
+    z-index: 99;
 }
 
 /* from Bulma */
