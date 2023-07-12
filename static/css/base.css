@@ -72,6 +72,10 @@ body {
     z-index: -1;
 }
 
+.product_heading {
+    background-color: #D5a6bd;
+}
+
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */
@@ -93,5 +97,16 @@ body {
 
     .header-container {
         padding-top: 164px;
+    }
+}
+
+/* pad top a bit when navbar is collapsed on mobile */
+@media (max-width: 991px) {
+    .header-container {
+        padding-top: 116px;
+    }
+
+    body {
+        height: calc(100vh 116px);
     }
 }
