@@ -7,7 +7,7 @@ body {
     background-size: cover;
     height: calc(100vh - 164px);
     color: #343434;
-    font-family: 'Lato';
+    font-family: 'Roboto';
 }
 
 /* from Bulma */
@@ -19,13 +19,17 @@ body {
     width: 1.5rem;
 }
 
+.nav-headers {
+    text-transform: camelcase;
+}
 .logo-font {
     text-transform: camelcase;
+    font-family: 'Dancing Script';
+    letter-spacing: 4px;
 }
 
 .main-logo-link {
     width: fit-content;
-
 }
 
 .home-page-button {

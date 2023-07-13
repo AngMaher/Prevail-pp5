@@ -1,7 +1,7 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-headers font-weight-bold nav-link text-black mr-5" href="#" id="all-products-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
@@ -13,29 +13,42 @@
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Cooking
+            <a class="nav-headers font-weight-bold nav-link text-black mr-5" href="#" id="homewares-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Homewares
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Kitchen</a>
-                <a href="" class="dropdown-item">Cook Books</a>
-                <a href="" class="dropdown-item">All Cooking</a>
+            <div class="dropdown-menu border-0" aria-labelledby="homewares-link">
+                <a href="{% url 'products' %}?category=kitchen" class="dropdown-item">Kitchen</a>
+                <a href="{% url 'products' %}?category=scales" class="dropdown-item">Scales</a>
+                <a href="{% url 'products' %}?category=home_accessories" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=kitchen,scales,accessories" class="dropdown-item">All Kitchen</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black mr-5" href="#" id="homeware-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                Wellness
+            <a class="nav-headers font-weight-bold nav-link text-black mr-5" href="#" id="books-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Books
             </a>
-            <div class="dropdown-menu border-0" aria-labelledby="homeware-link">
-                <a href="" class="dropdown-item">Movitation</a>
-                <a href="" class="dropdown-item">Jewelry</a>
-                <a href="" class="dropdown-item">All Wellness</a>
+            <div class="dropdown-menu border-0" aria-labelledby="books-link">
+                <a href="{% url 'products' %}?category=cooking" class="dropdown-item">Cooking</a>
+                <a href="{% url 'products' %}?category=exercise_books" class="dropdown-item">Exercise Books</a>
+                <a href="{% url 'products' %}?category=health_plan" class="dropdown-item">Health Plan</a>
+                <a href="{% url 'products' %}?category=cooking,exercise_books,health_plan" class="dropdown-item">All Books</a>
             </div>
         </li>
 
         <li class="nav-item dropdown">
-            <a class="logo-font font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-headers font-weight-bold nav-link text-black mr-5" href="#" id="lifestyle-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                LifeStyle
+            </a>
+            <div class="dropdown-menu border-0" aria-labelledby="lifestyle-link">
+                <a href="{% url 'products' %}?category=motivation" class="dropdown-item">Motivation</a>
+                <a href="{% url 'products' %}?category=exercise_accessories" class="dropdown-item">Exercise Accessories</a>
+                <a href="{% url 'products' %}?category=motivation,exercise_accessories" class="dropdown-item">All LifeStyle</a>
+            </div>
+        </li>
+
+        <li class="nav-item dropdown">
+            <a class="nav-headers font-weight-bold nav-link text-black" href="#" id="specials-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
