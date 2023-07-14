@@ -9,6 +9,9 @@ body {
     color: #343434;
     font-family: 'Roboto';
 }
+.container-fluid {
+    padding: 0;
+}
 
 /* from Bulma */
 .icon {
@@ -76,9 +79,18 @@ body {
     z-index: -1;
 }
 
-.product_heading {
-    background-color: #D5a6bd;
+.product-heading {
+    background: #D5a6bd;
+    width: 50%;
 }
+a.category-badge > span.badge:hoover {
+    background: #343434;
+    color: #fff;
+}
+
+/* .product_heading {
+    background-color: #D5a6bd;
+} */
 
 /* -------------------------------- Media Queries */
 
@@ -112,5 +124,9 @@ body {
 
     body {
         height: calc(100vh 116px);
+    }
+
+    .header-container {
+        padding-top: 200px;
     }
 }
