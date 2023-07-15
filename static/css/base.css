@@ -83,11 +83,11 @@ body {
     background: #D5a6bd;
     width: 50%;
 }
-a.category-badge > span.badge:hoover {
-    background: #343434;
-    color: #fff;
-}
+a.category-badge > span.badge:hover {
+    background: #343434 !important;
+    color: #fff !important;
 
+}
 /* .product_heading {
     background-color: #D5a6bd;
 } */
