@@ -10,14 +10,15 @@
 {% endblock %}
 
 {% block content %}
-    <div class="container mb-2 bg-white">
-        <div class="row">
-            <div class="col>">
-                <hr>
-                <h2 class="mb-4">Your Basket</h2>
-                <hr>
-            </div>
-        </div>
+<div class="row w-50 offset-3">
+    <div class="col text-center mt-3 product-heading">
+        <h2>
+            Your Basket
+        </h2>
+    </div>
+</div>
+<br><br>
+    <div class="container mb-2 bg-white shadow-lg">
         <div class="row">
             <div class="col>">
                 {% if bag_items %}
