@@ -94,6 +94,7 @@ body {
 }
 
 .product-heading {
+    border: 1px solid #343434;
     background: #D5a6bd;
     width: 50%;
 }
