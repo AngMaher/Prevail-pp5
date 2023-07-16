@@ -43,8 +43,21 @@ body {
 }
 
 .btn-black {
-    background: black;
+    background: #343434;
     color: white;
+}
+
+.btn-outline-dark {
+    background: white;
+    color: #343434 !important; 
+    border: 1px solid #343434;
+}
+
+.btn-outline-dark:hover,
+.btn-outline-dark:active,
+.btn-outline-dark:focus {
+    background: #343434;
+    color: white !important;
 }
 
 .home-page-button:hover,
@@ -54,7 +67,8 @@ body {
 .btn-black:active,
 .btn-black:focus {
     background: #D5a6bd;
-    color: white;
+    color: #343434;
+    border: 1px solid black;
 }
 
 .text-black {
