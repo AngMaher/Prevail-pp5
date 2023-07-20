@@ -33,7 +33,7 @@ DEBUG = 'DEVELOPMENT' in os.environ
 ALLOWED_HOSTS = [
     'prevail-weight-loss-fa257f0d4d7b.herokuapp.com',
     'localhost',
-    '8000-angmaher-prevailpp5-tsksn9ykb4b.ws-eu101.gitpod.io',
+    '8000-angmaher-prevailpp5-tsksn9ykb4b.ws-eu102.gitpod.io',
     ]
 
 
@@ -54,6 +54,7 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
+    'success_stories',
 
     # other
     'crispy_forms',
