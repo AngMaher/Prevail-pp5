@@ -31,8 +31,8 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    'prevail-weight-loss-fa257f0d4d7b.herokuapp.com',
-    'localhost', '127.0.0.1',
+    'https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/',
+    'localhost',
     '8000-angmaher-prevailpp5-tsksn9ykb4b.ws-eu102.gitpod.io',
     ]
 
