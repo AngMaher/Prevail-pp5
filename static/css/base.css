@@ -42,6 +42,12 @@ body {
     margin-bottom: 10px;
 }
 
+.links {
+    text-decoration: none;
+    color:#D5a6bd;
+    font-weight: 600;
+}
+
 .btn-black {
     background: #343434;
     color: white;
@@ -131,6 +137,12 @@ a.category-badge > span.badge:hover {
 
 .toast-capper {
     height: 5px;
+}
+
+.accounts {
+    background: #fff;
+    width: 50%;
+    padding: 30px;
 }
 
 /* from CSS-tricks.com: https://css-tricks.com/snippets/css/css-triangle/ */
