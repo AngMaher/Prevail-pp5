@@ -31,7 +31,7 @@ SECRET_KEY = os.environ.get('SECRET_KEY')
 DEBUG = 'DEVELOPMENT' in os.environ
 
 ALLOWED_HOSTS = [
-    'https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/',
+    'prevail-weight-loss-fa257f0d4d7b.herokuapp.com',
     'localhost',
     '8000-angmaher-prevailpp5-tsksn9ykb4b.ws-eu102.gitpod.io',
     ]
@@ -192,7 +192,7 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (os.path.join(BASE_DIR, 'static'),)
 
 MEDIA_URL = '/media/'
-MEDIA_ROOT = os.path.join(BASE_DIR, '/media/')
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
