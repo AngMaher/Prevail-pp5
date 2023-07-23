@@ -1,10 +1,12 @@
 from django.contrib import admin
 from .models import Product, Category
+from django_summernote.admin import SummernoteModelAdmin
 
 # Register your models here.
 
 
-class ProductAdmin(admin.ModelAdmin):
+@admin.register(Product)
+class ProductAdmin(SummernoteModelAdmin):
     list_display = (
         'name',
         'category',
@@ -12,7 +14,7 @@ class ProductAdmin(admin.ModelAdmin):
         'rating',
         'image',
     )
-
+    summernote_fields = ['description']
     ordering = ('name',)
 
 
@@ -23,5 +25,4 @@ class CategoryAdmin(admin.ModelAdmin):
     )
 
 
-admin.site.register(Product, ProductAdmin)
 admin.site.register(Category, CategoryAdmin)

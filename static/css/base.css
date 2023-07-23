@@ -42,15 +42,27 @@ body {
     margin-bottom: 10px;
 }
 
-.links {
+.links {                
     text-decoration: none;
     color:#D5a6bd;
     font-weight: 600;
 }
 
+.links:hover {
+    text-decoration: none;
+    color: #eb65a6;
+}
+
+.bg-pink {
+    background: rgb(213, 166, 189, 0.7);
+}
+
 .btn-black {
     background: #343434;
     color: white;
+}
+.card {
+    border: 0;
 }
 
 .btn-outline-dark {
@@ -104,6 +116,8 @@ body {
     background: #D5a6bd;
     width: 50%;
 }
+
+
 a.category-badge > span.badge:hover {
     background: #343434 !important;
     color: #fff !important;
