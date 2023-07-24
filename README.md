@@ -78,39 +78,39 @@ Age range: 30-60
 <details>
 <summary>Click to View Home Page wireframes</summary>
 
-![blog page](/docs/readme/HomeWF.png)
+![blog page](/docs/readme/home.png)
 </details>
 
-#### Home Page Wireframe
+#### Footer Wireframe
 
 <details>
 <summary>Click to View the Footer wireframes</summary>
 
-![blog page](/docs/readme/footerWF.png)
+![blog page](/docs/readme/footer.png)
 </details>
 
-#### Home Page Wireframe
+#### Products Shop Page Wireframe
 
 <details>
 <summary>Click to View Shop wireframes</summary>
 
-![blog page](/docs/readme/ProductWF.png)
+![blog page](/docs/readme/products.png)
 </details>
 
-#### Home Page Wireframe
+#### Product Detail Page Wireframe
 
 <details>
 <summary>Click to View Product Detail wireframes</summary>
 
-![blog page](/docs/readme/Detail-ProductWF.png)
+![blog page](/docs/readme/product_detail.png)
 </details>
 
-#### Home Page Wireframe
+#### Basket Page Wireframe
 
 <details>
 <summary>Click to View Basket wireframes</summary>
 
-![blog page](/docs/readme/BasketWF.png)
+![blog page](/docs/readme/basket.png)
 </details>
 
 
