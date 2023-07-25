@@ -18,7 +18,37 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
-    <div class="row">          
+    <br><br> 
+    <div class="row">
+      <div class="col-12 col-lg-7">
+          <div class="order-confirmation-wrapper p-2 border">
+              <div class="row">
+                  <div class="col">
+                      <small class="text-muted">Class</small>
+                  </div>
+              </div>
+
+              {% for class in class_list %}
+              <div class="row">
+                  <div class="col-sm-12 col-md-4">
+                      <p class="small mb-0 text-black font-weight-bold">
+                          {{ class.leader_name }}
+                      </p>
+                  </div>
+                  <div class="col-sm-12 col-md-8 text-right">
+                      <p class="small mb-0">{{ class.class_address }}</p>
+                  </div>
+                  <div class="col-12 col-md-8 text-right">
+                    <p class="small mb-0">{{ class.class_day }}</p>
+                </div>
+                <div class="col-12 col-md-8 text-right">
+                  <p class="small mb-0">{{ class.class_time }}</p>
+              </div>
+              </div>
+              {% endfor %}
+
+    <!-- <div class="row">    
+      <div class="col-12 col-lg-8 bag-notification-wrapper p-2 border offset-2">      
         <table class="table table-striped">
           <thead>
             <tr>
@@ -39,10 +69,9 @@
             </tbody>
           {% endfor %}
         </table>
-      </div>
+      </div> -->
     </div>
-
-</div>
+  </div>
 
 
 <div class="btt-button shadow-sm border border-black">
