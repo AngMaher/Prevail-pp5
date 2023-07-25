@@ -20,4 +20,69 @@
     </div>
 </div>
 
+<div class="row">
+    {% for story in Stories %}
+        <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
+            <div class="card h-100 text-center">
+                {% if product.image %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top img-fluid" src="{{ product.image.url }}" alt="{{ product.name }}">
+                </a>
+                {% else %}
+                <a href="{% url 'product_detail' product.id %}">
+                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                </a>
+                {% endif %}
+                <div class="card-body pb-0">
+                    <p class="mb-0">{{ story. }}</p>
+                </div>
+                <div class="card-footer bg-pink pt-0 border-1">
+                    <div class="row">
+                        <div class="col">
+                            <!-- <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p> -->
+                            {% if product.category %}
+                                {% if product.category.name == 'deals' %}
+                                    <p class="lead mb-0 font-weight-bold"><strike><small>€{{ product.price }}</small></strike></p>
+                                    <p class="lead mb-0 font-weight-bold font-red">€{% widthratio 15 product.price 100 %}</p>
+                                {% else %}
+                                    <p class="lead mb-0 font-weight-bold">€{{ product.price }}</p>
+                                {% endif %}
+                            <p class="small mt-1 mb-0">
+                                <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
+                                    <i class="fas fa-tag mr-1"></i><strong>{{ product.category.friendly_name }}</strong>
+                                </a>
+                            </p>
+                            {% endif %}
+                            {% if product.rating %}
+                                <small><i class="fas fa-star mr-1"></i>{{ product.rating }} / 5</small>
+                            {% else %}
+                                <small>No Rating</small>
+                            {% endif %}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        {% if forloop.counter|divisibleby:1 %}
+            <div class="col-12 d-sm-none mb-5">
+                <hr>
+            </div>
+        {% endif %}                        
+        {% if forloop.counter|divisibleby:2 %}
+            <div class="col-12 d-none d-sm-block d-md-block d-lg-none mb-5">
+                <hr>
+            </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:3 %}
+            <div class="col-12 d-none d-lg-block d-xl-none mb-5">
+                <hr>
+            </div>
+        {% endif %}
+        {% if forloop.counter|divisibleby:4 %}
+            <div class="col-12 d-none d-xl-block mb-5">
+                <hr>
+            </div>
+        {% endif %}
+    {% endfor %}
+</div>
 {%endblock%}
