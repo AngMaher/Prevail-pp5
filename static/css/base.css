@@ -138,6 +138,8 @@ a.category-badge > span.badge:hover {
     cursor: pointer;   
 }
 
+/*------------------------bootstrap toasts */
+
 .message-container {
     position: fixed;
     top: 75px;
