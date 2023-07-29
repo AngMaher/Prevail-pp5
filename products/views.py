@@ -136,6 +136,7 @@ def delete_product(request, product_id):
     if request.method == 'POST':
         product.delete()
         messages.success(request, f'Product {product.name} has been deleted!')
+        return redirect(reverse('products'))
 
     template = 'products/delete_product.html'
     context = {
