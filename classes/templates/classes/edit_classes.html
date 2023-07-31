@@ -1,0 +1,39 @@
+{% extends "base.html" %}
+{% load static %}
+
+
+{% block page_header %}
+    <div class="container header-container">
+        <div class="row">
+            <div class="col"></div>
+        </div>
+    </div>
+{% endblock %}
+
+{% block content %}
+<!-- <div class="overlay"></div> -->
+<div class="container">
+    <div class="row w-50 offset-3">
+        <div class="col text-center mt-3 product-heading shadow-lg">
+            <h2>
+                Class Management
+            </h2>
+            <h5 class="text-muted">Edit a Class</h5>
+        </div>
+    </div>
+    <br><br>
+    <div class="row">
+        <div class="col-12 col-lg-6 offset-lg-3">
+            <form method="POST" action="{% url 'edit_classes' %}" class="form mb-2" enctype="multipart/form-data">
+                {% csrf_token %}
+                {{ form | crispy }}
+                <p>Please be careful to enter time in 24hr</p>
+                <div class="text-right">
+                    <a class="btn btn-black" href="{% url 'classes' %}">Cancel</a>
+                    <button class="btn btn-black" type="submit">Edit Class</button>
+                </div>
+            </form>
+        </div>            
+    </div>
+</div>
+{% endblock %}

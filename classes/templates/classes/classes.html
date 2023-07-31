@@ -29,15 +29,24 @@
               <th>Address</th>
               <th>Day</th>
               <th>Time</th>
+              <th></th>
             </tr>
           </thead>
-          {% for class in class_list %}
+          {% for classes in class_list %}
             <tbody>
               <tr>
-                <td>{{ class.leader_name }}</td>
-                <td>{{ class.class_address }}</td>
-                <td>{{ class.class_day }}</td>
-                <td>{{ class.class_time }}</td>
+                <td>{{ classes.leader_name }}</td>
+                <td>{{ classes.class_address }}</td>
+                <td>{{ classes.class_day }}</td>
+                <td>{{ classes.class_time }}</td>
+                <td>
+                  {% if request.user.is_superuser %}
+                    <small class="m1-3">
+                      <a href="{% url 'edit_classes' classes.id %}">Edit</a> |
+                      <a class="text-danger" href="">Delete</a>
+                    </small>
+                  {% endif %}
+                </td>
               </tr>
             </tbody>
           {% endfor %}
