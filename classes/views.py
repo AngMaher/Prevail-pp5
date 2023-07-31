@@ -68,8 +68,8 @@ def edit_classes(request, classes_id):
 
 
 @login_required
-def delete_class(request, classes_id):
-    """Delete product in the store"""
+def delete_classes(request, classes_id):
+    """Delete classs"""
     if not request.user.is_superuser:
         messages.error(request, 'Sorry, only store owners can do that.')
         return redirect(reverse('home'))
@@ -77,12 +77,12 @@ def delete_class(request, classes_id):
     classes = get_object_or_404(Classes, pk=classes_id)
     if request.method == 'POST':
         classes.delete()
-        messages.success(request, f'Product {classes.leader_name} has been deleted!')
+        messages.success(request, f'Class {classes.leader_name} has been deleted!')
         return redirect(reverse('classes'))
 
     template = 'classes/delete_classes.html'
     context = {
-        'product': product,
+        'classes': classes,
     }
 
     return render(request, template, context)

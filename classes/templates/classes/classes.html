@@ -43,7 +43,7 @@
                   {% if request.user.is_superuser %}
                     <small class="m1-3">
                       <a href="{% url 'edit_classes' classes.id %}">Edit</a> |
-                      <a class="text-danger" href="">Delete</a>
+                      <a class="text-danger" href="{% url 'delete_classes' classes.id %}">Delete</a>
                     </small>
                   {% endif %}
                 </td>
