@@ -306,6 +306,20 @@ a.category-badge > span.badge:hover {
     border-color: #dc3545;
 }
 
+.weight-banner {
+    height: 150px;
+    padding: 10px 50px 0;
+}
+
+.image-banner {
+    padding: 0 50px;
+}
+
+.class-banner {
+    height: 150px;
+    padding: 0 50px;
+}
+
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
     .fixed-top-desktop-only {
