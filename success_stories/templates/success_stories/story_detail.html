@@ -18,25 +18,34 @@
             <hr class="w-50 mb-1">
         </div>
     </div>
-</div>
+</div><br>
 
 <div class="container-fluid m-3">
     <div class="row w-lg-75 weight-banner text-center">
-        <div class="col-4 bg-grey"><h2>{{ story.start_weight }}</h2></div>
-        <div class="col-4 bg-pink"><h2>{{ story.start_weight }}</h2></div>
-        <div class="col-4 bg-grey">{{ story.start_weight }}</div>
+        <div class="col-4 text-white bg-grey">
+            <h2><strong>Start Weight</strong></h2>
+            <h2>{{ story.start_weight }}lbs</h2>
+        </div>
+        <div class="col-4 bg-pink">
+            <h2><strong>Weight Loss</strong></h2>
+            <h2>{{ story.weight_loss }}lbs</h2>
+        </div>
+        <div class="col-4 text-white bg-grey">
+            <h2><strong>Weight Now</strong></h2>
+            <h2>{{ story.weight_now }}lbs</h2>
+        </div>
     </div>
     <div class="row w-lg-75 image-banner">
-        <div class="col-6 bg-pink">
+        <div class="col-6">
             <div class="image-container my-5">
                 {% if story.image_before %}
-                    <img class="card-img-top img-fluid" src="{{ story.image_before.url }}" alt="{{ story.name }}">
+                    <img class="card-img-top img-fluid img-fluid w-100" src="{{ story.image_before.url }}" alt="{{ story.name }}">
                 {% else %}
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ story.name }}">
+                    <img class="card-img-top img-fluid img-fluid w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ story.name }}">
                 {% endif %}
             </div>
         </div> 
-        <div class="col-6 bg-grey">
+        <div class="col-6">
             <div class="image-container my-5">
                 {% if story.image_after %}
                     <img class="card-img-top img-fluid" src="{{ story.image_after.url }}" alt="{{ story.name }}">
@@ -47,8 +56,21 @@
         </div>
     </div>
     <div class="row w-lg-75 class-banner">
-        <div class="col-6 bg-grey text-center">coach</div>
-        <div class="col-6 bg-pink text-center">class</div>
+        <div class="col-6 bg-grey text-white text-center">
+            <h3><strong>Class Leader:</strong></h3>
+            <h3>{{ story.class_attended.leader_name }}</h3>
+        </div>
+        <div class="col-6 bg-pink text-center">
+            <h3><strong>Class:</strong></h3>
+            <h3>{{ story.class_attended.class_address }}</h3>
+        </div>
+    </div>
+</div><br><br>
+
+<div class="row offset-2">
+    <div class="col-12 col-md-10 text-center">
+        <h2 class="m-3">Content - {{ story.name }}</h2>
+        <p class="text-left m-3">{{ story.content }}</p>
     </div>
 </div>
 

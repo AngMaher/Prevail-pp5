@@ -107,6 +107,10 @@ body {
     background: #343434;
 }
 
+.text-white {
+    color:#fff;
+}
+
 .overlay {
     height: 100%;
     width: 100%;
@@ -307,16 +311,33 @@ a.category-badge > span.badge:hover {
 }
 
 .weight-banner {
-    height: 150px;
-    padding: 10px 50px 0;
+    height: 100px;
+    padding: 0 50px;
 }
 
 .image-banner {
     padding: 0 50px;
 }
 
+.image-flash {
+    height: 100px;
+    width: 100px;
+    position: absolute;
+    border-radius: 50%;
+    border: 2px solid #343434;
+    bottom: 50%;
+    left: 70%;
+    background-color: #D5a6bd;
+}
+
+.loss-banner {
+    text-align: center;
+    font-weight: 600;
+    font-size: larger;
+}
+
 .class-banner {
-    height: 150px;
+    height: 100px;
     padding: 0 50px;
 }
 
@@ -344,6 +365,7 @@ a.category-badge > span.badge:hover {
 
 /* pad top a bit when navbar is collapsed on mobile */
 @media (max-width: 991px) {
+
     .header-container {
         padding-top: 116px;
     }

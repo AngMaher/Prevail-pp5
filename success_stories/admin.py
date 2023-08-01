@@ -13,6 +13,5 @@ class Success_StoriesAdmin(admin.ModelAdmin):
         'weight_now',
         'image_before',
         'image_after',
-        'content',
         'name',
     )
