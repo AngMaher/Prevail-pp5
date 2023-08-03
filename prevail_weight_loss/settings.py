@@ -57,6 +57,7 @@ INSTALLED_APPS = [
     'success_stories',
     'classes',
     'profiles',
+    'membership',
 
     # other
     'crispy_forms',
