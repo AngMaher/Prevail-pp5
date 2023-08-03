@@ -21,7 +21,7 @@ def class_register(request):
     form = form_class(request.POST or None)
     if request.method == "POST":
         if form.is_valid():
-            form.save()
+            member = form.save()
             messages.success(request, 'Successfully registered for class! \
                     - An Email will be sent with your details.')
             return redirect(reverse('home'))
