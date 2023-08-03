@@ -12,6 +12,18 @@ def classes(request):
     return render(request, 'classes/classes.html', {'class_list': class_list})
 
 
+def class_detail(request, classes_id):
+    """ A view to show individual product details """
+
+    class_detail = get_object_or_404(Classes, pk=classes_id)
+
+    context = {
+        'class_detail': class_detail
+            }
+
+    return render(request, 'classes/class_detail.html', context)
+
+
 @login_required
 def add_classes(request):
     """ Add a new class """
@@ -26,7 +38,8 @@ def add_classes(request):
             messages.success(request, 'Successfully added new Class!')
             return redirect(reverse('classes'))
         else:
-            messages.error(request, 'Failed to add a class. Please ensure the form is valid')
+            messages.error(request, 'Failed to add a \
+                 class. Please ensure the form is valid')
     else:
         form = ClassesForm()
 
@@ -53,10 +66,12 @@ def edit_classes(request, classes_id):
             messages.success(request, 'Successfully updated the class')
             return redirect('classes')
         else:
-            messages.error(request, 'Failed to update class. Please ensure the form is valid.')
+            messages.error(request, 'Failed to update class. \
+                    Please ensure the form is valid.')
     else:
         form = ClassesForm(instance=classes)
-        messages.info(request, f'You are editing class for {classes.leader_name}')
+        messages.info(request, f'You are editing \
+                class for {classes.leader_name}')
 
     template = 'classes/edit_classes.html'
     context = {
@@ -77,7 +92,8 @@ def delete_classes(request, classes_id):
     classes = get_object_or_404(Classes, pk=classes_id)
     if request.method == 'POST':
         classes.delete()
-        messages.success(request, f'Class {classes.leader_name} has been deleted!')
+        messages.success(request, f'Class {classes.leader_name} has \
+                    been deleted!')
         return redirect(reverse('classes'))
 
     template = 'classes/delete_classes.html'
