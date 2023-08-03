@@ -20,38 +20,38 @@
 </div><br>
 
 <div class="container-fluid m-3">
-    <div class="row w-lg-75 weight-banner text-center">
-        <div class="col-4 text-white bg-grey">
+    <div class="row w-lg-75 text-center">
+        <div class="col-4">
             <h2><strong>County:</strong></h2>
             <h2>{{ class_detail.class_county }}</h2>
         </div>
-        <div class="col-4 bg-pink">
+        <div class="col-4">
             <h2><strong>Town:</strong></h2>
             <h2>{{ class_detail.class_town }}</h2>
         </div>
-        <div class="col-4 text-white bg-grey">
+        <div class="col-4">
             <h2><strong>Address:</strong></h2>
             <h2>{{ class_detail.class_address }}</h2>
         </div>
     </div>
-    <div class="row w-lg-75 class-banner">
-        <div class="col-6 bg-grey text-white text-center">
+    <div class="row w-lg-75">
+        <div class="col-6 text-center">
             <h3><strong>Class Leader:</strong></h3>
             <h3>{{ class_detail.leader_name }}</h3>
         </div>
-        <div class="col-6 bg-pink text-center">
+        <div class="col-6 text-center">
             <h3><strong>Class Time:</strong></h3>
             <h3>{{ class_detail.class_day}} @ {{ class_detail.class_time }}</h3>
         </div>
     </div>
-    <div class="row w-lg-75 class-banner">
-        <div class="col-6 bg-grey text-white text-center">
+    <div class="row w-lg-75">
+        <div class="col-6 text-left">
             <h3><strong>Class Info</strong></h3>
             <h3>{{ class_detail.class_info }}</h3>
         </div>
-        <div class="col-6 bg-pink text-center">
+        <div class="col-6 text-center">
             <h4>
-                <a href="" class="home-page-button btn btn-lg py-3"><strong>Register for This Class</strong></a>
+                <a href="{% url 'class_register'%}" class="home-page-button btn btn-lg py-3"><strong>Register for This Class</strong></a>
             </h4>
         </div>
     </div>
