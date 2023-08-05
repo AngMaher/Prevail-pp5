@@ -19,6 +19,7 @@ def class_register(request):
     form_class = MembershipForm
 
     form = form_class(request.POST or None)
+    testing = 'hello'
     if request.method == "POST":
         if form.is_valid():
             member = form.save()
@@ -28,10 +29,13 @@ def class_register(request):
         else:
             messages.error(request, 'Failed to register for \
                  class. Please ensure the form is valid')
+    else:
+        form = MembershipForm()
 
     template = 'membership/class_register.html'
     context = {
         'form': form,
+        'testing': testing,
     }
 
     return render(request, template, context)

@@ -5,7 +5,7 @@ from classes.models import Classes
 class Success_Stories(models.Model):
     class_attended = models.ForeignKey(
         Classes, on_delete=models.SET_NULL,
-        null=True, blank=True)
+        null=True, blank=True, related_name='success_stories')
     title = models.CharField(max_length=254, blank=False)
     weight_loss = models.IntegerField(null=False, blank=False)
     start_weight = models.IntegerField(null=False, blank=False)
