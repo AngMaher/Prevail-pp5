@@ -11,7 +11,7 @@
 
 {% block content %}
 <div class="container-fluid">
-    <div class="row w-50 offset-3">
+    <div class="row w-sm-90 w-50 offset-3">
         <div class="col text-center mt-3 product-heading">
             <h2>Class Detail</h2>
             <hr class="w-50 mb-1">
@@ -19,42 +19,59 @@
     </div>
 </div><br>
 
-<div class="container-fluid m-3">
-    <div class="row w-lg-75 text-center">
-        <div class="col-4">
-            <h2><strong>County:</strong></h2>
-            <h2>{{ class_detail.class_county }}</h2>
+<div class="container-fluid w-50 offset-3">
+    <div class="row">
+        <div class="col">
+            <h4><strong>County:</strong></h4>
         </div>
-        <div class="col-4">
-            <h2><strong>Town:</strong></h2>
-            <h2>{{ class_detail.class_town }}</h2>
-        </div>
-        <div class="col-4">
-            <h2><strong>Address:</strong></h2>
-            <h2>{{ class_detail.class_address }}</h2>
+        <div class="col">
+            <h4>{{ class_detail.class_county }}</h4>
         </div>
     </div>
-    <div class="row w-lg-75">
-        <div class="col-6 text-center">
-            <h3><strong>Class Leader:</strong></h3>
-            <h3>{{ class_detail.leader_name }}</h3>
+    <div class="row">
+        <div class="col">
+            <h4><strong>Area:</strong></h4>
         </div>
-        <div class="col-6 text-center">
-            <h3><strong>Class Time:</strong></h3>
-            <h3>{{ class_detail.class_day}} @ {{ class_detail.class_time }}</h3>
+        <div class="col">
+            <h4>{{ class_detail.class_town }}</h4>
         </div>
     </div>
-    <div class="row w-lg-75">
-        <div class="col-6 text-left">
-            <h3><strong>Class Info</strong></h3>
-            <h3>{{ class_detail.class_info }}</h3>
+    <div class="row">
+        <div class="col">
+            <h4><strong>Address:</strong></h4>
         </div>
-        <div class="col-6 text-center">
-            <h4>
-                <a href="{% url 'class_register'%}" class="home-page-button btn btn-lg py-3"><strong>Register for This Class</strong></a>
-            </h4>
+        <div class="col">
+            <h4>{{ class_detail.class_address }}</h4>
         </div>
     </div>
-</div><br><br>
+    <div class="row">
+        <div class="col">
+            <h4><strong>When:</strong></h4>
+        </div>
+        <div class="col">
+            <h4>{{ class_detail.class_day }} @ {{ class_detail.class_time }}</h4>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col text-center">
+            <h3><strong>About: </strong></h3>
+        </div>
+    </div>
+    <hr>
+    <div class="row">
+        <div class="col">
+            <p class="w-50">
+                {{ class_detail.class_info }}
+            </p>
+        </div>
+    </div>
+    <hr>
+    <div class="col-12 text-center">
+        <h4>
+            <a href="{% url 'class_register'%}" class="home-page-button btn py-3"><strong>Register for a Class</strong></a>
+        </h4>
+    </div>
+</div>
 
 {% endblock %}

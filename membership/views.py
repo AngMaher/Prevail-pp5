@@ -1,4 +1,4 @@
-from django.shortcuts import render, redirect
+from django.shortcuts import render, redirect, reverse
 from classes.models import Classes
 from classes.views import class_detail
 from .forms import MembershipForm
@@ -19,10 +19,9 @@ def class_register(request):
     form_class = MembershipForm
 
     form = form_class(request.POST or None)
-    testing = 'hello'
     if request.method == "POST":
         if form.is_valid():
-            member = form.save()
+            form.save()
             messages.success(request, 'Successfully registered for class! \
                     - An Email will be sent with your details.')
             return redirect(reverse('home'))
@@ -35,7 +34,6 @@ def class_register(request):
     template = 'membership/class_register.html'
     context = {
         'form': form,
-        'testing': testing,
     }
 
     return render(request, template, context)
