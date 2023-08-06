@@ -20,7 +20,7 @@
     </div>
 </div>
 
-<div class="row offset-2">
+<div class="row">
     {% for story in stories %}
         <div class="col-sm-6 col-md-6 col-lg-4 col-xl-3">
             <div class="card h-100 mt-5">
@@ -41,7 +41,13 @@
                         </div>
                     </div>
                     <div class="'row text-left">
-                        <a href="{% url 'story_detail' story.id %}">Read More</a>
+                        <a href="{% url 'story_detail' story.id %}">Read More </a> | 
+                        {% if request.user.is_superuser %}
+                            <small class="m1-3">
+                                <a href="{% url 'edit_story' story.id %}">Edit</a> |
+                                <a class="text-danger" href="{% url 'delete_story' story.id%}">Delete</a>
+                            </small>
+                        {% endif %}
                     </div>
                 </div>
             </div>
