@@ -17,21 +17,18 @@
             <h2>
                 Category Management
             </h2>
-            <h5 class="text-muted">Add a Category</h5>
-            <h5>
-                <a href="{% url 'categories' %}">Edit</a>
-            </h5>    
+            <h5 class="text-muted">Edit a Category</h5>
         </div>
     </div>
     <br><br>
     <div class="row">
-        <div class="col-12 col-lg-9 offset-lg-2 accounts shadow-lg">
-            <form method="POST" action="{% url 'add_category' %}" class="form mb-2" enctype="multipart/form-data">
+        <div class="col-12 col-lg-6 offset-lg-3">
+            <form method="POST" action="{% url 'edit_category' category.id %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
-                {{ form | crispy }}
+                <strong>{{ form | crispy }}</strong>
                 <div class="text-right">
                     <a class="btn btn-black" href="{% url 'categories' %}">Cancel</a>
-                    <button class="btn btn-black" type="submit">Add Category</button>
+                    <button class="btn btn-black" type="submit">Edit Class</button>
                 </div>
             </form>
         </div>            
