@@ -417,5 +417,18 @@ a.category-badge > span.badge:hover {
     .increment-qty, .decrement-qty {
         padding: .25rem .5rem !important;
     }
+
+    .weight-banner {
+        padding: 0;
+    }
+
+    .image-banner {
+        padding: 0;
+    }
+
+    .class-banner {
+        padding: 0;
+    }
 }
+
 
