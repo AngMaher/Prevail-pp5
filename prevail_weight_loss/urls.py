@@ -35,6 +35,6 @@ urlpatterns = [
 
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 
-handler404 = 'retro_reboot.views.handler404'
-handler500 = 'retro_reboot.views.handler500'
-handler403 = 'retro_reboot.views.handler403'
+handler404 = 'prevail_weight_loss.views.handler404'
+handler500 = 'prevail_weight_loss.views.handler500'
+handler403 = 'prevail_weight_loss.views.handler403'
