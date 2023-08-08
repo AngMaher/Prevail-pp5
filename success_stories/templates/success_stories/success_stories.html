@@ -26,9 +26,9 @@
             <div class="card h-100 mt-5">
                 <div class="image-container">
                     {% if story.image_after %}
-                        <img class="card-img-top img-fluid" src="{{ story.image_after.url }}" alt="{{ story.name }}">
+                        <img class="card-img-top img-fluid" src="{{ story.image_after.url }}" alt="prevail weight loss{{ story.name }}">
                     {% else %}
-                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="{{ story.name }}">
+                        <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="prevail weight loss{{ story.name }}">
                     {% endif %}
                     <div class="image-flash">
                         <p class="loss-banner"><br>{{ story.weight_loss }}lbs</p>

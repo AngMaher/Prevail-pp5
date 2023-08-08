@@ -8,6 +8,7 @@ body {
     height: calc(100vh - 164px);
     color: #343434;
     font-family: 'Roboto';
+    overflow-x: hidden;
 }
 .container-fluid {
     padding: 0;
