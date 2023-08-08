@@ -11,9 +11,21 @@ body {
     overflow-x: hidden;
 }
 
-.logo-img {
-    background: url('/static/media/prevail-logo.jpg') no-repeat center center fixed;
+.site-logo {
+    font-family: 'cinzel decorative';
+    font-weight: 600;
+    font-size: 70px;
+    color: #D5a6bd;
+    margin-left: 20px;
 }
+
+.site-title {
+    font-family: 'Roboto';
+    font: 30px;
+    color:#343434;
+    margin-left: 60px;
+}
+
 .container-fluid {
     padding: 0;
 }
@@ -136,6 +148,9 @@ body {
     background: #D5a6bd;
 }
 
+.card-img-top {
+    height: 300px;
+}
 
 a.category-badge > span.badge:hover {
     background: #343434 !important;
@@ -361,7 +376,7 @@ a.category-badge > span.badge:hover {
     }
 
     .header-container {
-        padding-top: 280px;
+        padding-top: 300px;
     }
 
     .message-container {
