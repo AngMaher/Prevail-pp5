@@ -10,9 +10,10 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item">By Price</a>
-                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item ">By Rating</a>
-                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item ">By Category</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item" aria-label="search">Login</a>
+                <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item" aria-label="search">By Price</a>
+                <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item" aria-label="search">By Rating</a>
+                <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item" aria-label="search">By Category</a>
                 <a href="{% url 'products'%}" class="dropdown-item">All Products</a>
             </div>
         </li>
@@ -22,9 +23,9 @@
                 Homewares
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="homewares-link">
-                <a href="{% url 'products' %}?category=kitchen" class="dropdown-item">Kitchen</a>
-                <a href="{% url 'products' %}?category=bathroom_scales" class="dropdown-item">Bathroom Scales</a>
-                <a href="{% url 'products' %}?category=home_accessories" class="dropdown-item">Accessories</a>
+                <a href="{% url 'products' %}?category=kitchen" class="dropdown-item" aria-label="search">Kitchen</a>
+                <a href="{% url 'products' %}?category=bathroom_scales" class="dropdown-item" aria-label="search">Bathroom Scales</a>
+                <a href="{% url 'products' %}?category=home_accessories" class="dropdown-item" aria-label="search">Accessories</a>
                 <a href="{% url 'products' %}?category=kitchen,bathroom_scales,home_accessories" class="dropdown-item">All Homewares</a>
             </div>
         </li>
@@ -34,10 +35,10 @@
                 Books
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="books-link">
-                <a href="{% url 'products' %}?category=cooking" class="dropdown-item">Cooking</a>
-                <a href="{% url 'products' %}?category=exercise_books" class="dropdown-item">Exercise Books</a>
-                <a href="{% url 'products' %}?category=health_plan" class="dropdown-item">Health Plan</a>
-                <a href="{% url 'products' %}?category=cooking,exercise_books,health_plan" class="dropdown-item">All Books</a>
+                <a href="{% url 'products' %}?category=cooking" class="dropdown-item" aria-label="search">Cooking</a>
+                <a href="{% url 'products' %}?category=exercise_books" class="dropdown-item" aria-label="search">Exercise Books</a>
+                <a href="{% url 'products' %}?category=health_plan" class="dropdown-item" aria-label="search">Health Plan</a>
+                <a href="{% url 'products' %}?category=cooking,exercise_books,health_plan" class="dropdown-item" aria-label="search">All Books</a>
             </div>
         </li>
 
@@ -46,10 +47,10 @@
                 LifeStyle
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="lifestyle-link">
-                <a href="{% url 'products' %}?category=journals" class="dropdown-item">Trackers & Journals</a>
-                <a href="{% url 'products' %}?category=exercise_accessories" class="dropdown-item">Exercise Accessories</a>
-                <a href="{% url 'products' %}?category=wellness" class="dropdown-item">Wellness</a>
-                <a href="{% url 'products' %}?category=journals,exercise_accessories,wellness" class="dropdown-item">All LifeStyle</a>
+                <a href="{% url 'products' %}?category=journals" class="dropdown-item" aria-label="search">Trackers & Journals</a>
+                <a href="{% url 'products' %}?category=exercise_accessories" class="dropdown-item" aria-label="search">Exercise Accessories</a>
+                <a href="{% url 'products' %}?category=wellness" class="dropdown-item" aria-label="search">Wellness</a>
+                <a href="{% url 'products' %}?category=journals,exercise_accessories,wellness" class="dropdown-item" aria-label="search">All LifeStyle</a>
             </div>
         </li>
 
@@ -58,10 +59,10 @@
                 Special Offers
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="specials-link">
-                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item">New Arrivals</a>
-                <a href="{% url 'products' %}?category=deals" class="dropdown-item">Deals</a>
-                <a href="{% url 'products' %}?category=clearance" class="dropdown-item">Clearance</a>
-                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item">All Specials</a>
+                <a href="{% url 'products' %}?category=new_arrivals" class="dropdown-item" aria-label="search">New Arrivals</a>
+                <a href="{% url 'products' %}?category=deals" class="dropdown-item" aria-label="search">Deals</a>
+                <a href="{% url 'products' %}?category=clearance" class="dropdown-item" aria-label="search">Clearance</a>
+                <a href="{% url 'products' %}?category=new_arrivals,deals,clearance" class="dropdown-item" aria-label="search">All Specials</a>
             </div>
         </li>
     </ul>

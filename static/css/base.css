@@ -1,6 +1,9 @@
 html {
     height: 100%;
 }
+main {
+    height: 650px;
+}
 
 body {
     background: url('/static/media/sneakers-weights-with-copy-space.jpg') no-repeat center center fixed;
@@ -10,12 +13,18 @@ body {
     font-family: 'Roboto';
     overflow-x: hidden;
 }
+.footer {
+    background-color: #343434;
+    color:#fff;
+    background-size: cover;
+}
 
 .site-logo {
     font-family: 'cinzel decorative';
     font-weight: 600;
     font-size: 70px;
-    color: #D5a6bd;
+    -webkit-text-stroke: .5px #d61773;
+    color: #d85c98;
     margin-left: 20px;
 }
 
@@ -91,6 +100,14 @@ body {
 }
 .card {
     border: 0;
+}
+
+.border-red {
+    text-decoration: none;
+}
+.border-red:hover {
+    color: #343434;
+    border-bottom: 1px solid #dc3545;
 }
 
 .btn-outline-dark {
@@ -246,6 +263,16 @@ a.category-badge > span.badge:hover {
     overflow-y: auto;
 }
 
+
+/* mailchimp */
+#mc_embed_signup {
+    background:#343434;
+    clear:left;
+    color: #fff;
+    font:14px Helvetica, Arial,sans-serif;
+    width: 600px;
+}
+   
 /* -------------------------------- Media Queries */
 
 /* Slightly larger container on xl screens */

@@ -27,6 +27,7 @@
         <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative&family=Dancing+Script:wght@500&family=Josefin+Slab:ital@0;1&family=Roboto&display=swap" rel="stylesheet">
         <link rel="shortcut icon" href="#"/>
         <link rel="stylesheet" href="{% static 'css/base.css' %}">
+        <link href="//cdn-images.mailchimp.com/embedcode/classic-061523.css" rel="stylesheet" type="text/css">
     {% endblock %}
 
     {% block extra_css%}
@@ -61,7 +62,7 @@
                 <div class="input-group w-100">
                     <input class="form-control border border-black" type="text" name="q" placeholder="Search our site">
                     <div class="input-group-append">
-                        <button class="form-control btn btn-black border border-black" type="submit">
+                        <button class="form-control btn btn-black border border-black" type="submit" aria-label="search">
                             <span class="icon">
                                 <i class="fas fa-search"></i>
                             </span>
@@ -125,7 +126,7 @@
         </nav>
         <div id="delivery-banner" class="row text-center w-100">
             <div class="col bg-grey text-white w-100">
-                <h4 class="nav-headers my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h4>
+                <h3 class="nav-headers my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h3>
                 <a class="links" href="{% url 'stories' %}">Success Stories</a> |
                 <a class="links" href="{% url 'about' %}">How it works </a>  |             
                 <a class="links" href="{% url 'classes' %}">  Classes </a> |             
@@ -158,9 +159,12 @@
 
     {% block page_header %}
     {% endblock %}
-
+<main>
     {% block content %}
     {% endblock %}
+</main>
+
+    {% include 'includes/footer-newsletter.html' %}
 
     {% block postloadjs %}
     <script type="text/javascript">
@@ -172,6 +176,30 @@
         alert.close();
         }, 3000);
     </script>
+
+    <script type="text/javascript"
+        src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
+    </script>
+    <script type="text/javascript">
+        (function($) {
+            window.fnames = new Array();
+            window.ftypes = new Array();
+            fnames[1]='FNAME';
+            ftypes[1]='text';
+            fnames[0]='EMAIL';
+            ftypes[0]='email';
+            fnames[2]='LNAME';
+            ftypes[2]='text';
+            fnames[3]='ADDRESS';
+            ftypes[3]='address';
+            fnames[4]='PHONE';
+            ftypes[4]='phone';
+            fnames[5]='BIRTHDAY';
+            ftypes[5]='birthday';
+        }(jQuery));
+        var $mcj = jQuery.noConflict(true);
+    </script>
+
     {% endblock %}
   </body>
 </html>

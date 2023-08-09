@@ -21,25 +21,25 @@
     </div>
 </li>
 <li class="list-inline-item dropdown">
-    <a class="text-black nav-link d-block d-lg-none" href="#" id="user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    <a class="text-black nav-link d-block d-lg-none" href="#" id="mobile-user-options" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
         <div class="text-center">
             <div><i class="fas fa-user fa-lg"></i></div>
             <p class="my-0">My Account</p>
         </div>
     </a>
-    <div class="dropdown-menu border-0" aria-labelledby="user-options">
+    <div class="dropdown-menu border-0" aria-labelledby="mobile-user-options">
         {% if request.user.is_authenticated %}
             {% if request.user.is_superuser %}
-                <a href="{% url 'add_product' %}" class="dropdown-item">Product Management</a>
-                <a href="{% url 'add_classes' %}" class="dropdown-item">Class Management</a>
-                <a href="{% url 'add_story' %}" class="dropdown-item">Story Management</a>
-                <a href="{% url 'categories' %}" class="dropdown-item">Category Management</a>
+                <a href="{% url 'add_product' %}" class="dropdown-item" aria-label="search">Product Management</a>
+                <a href="{% url 'add_classes' %}" class="dropdown-item" aria-label="search">Class Management</a>
+                <a href="{% url 'add_story' %}" class="dropdown-item" aria-label="search">Story Management</a>
+                <a href="{% url 'categories' %}" class="dropdown-item" aria-label="search">Category Management</a>
             {% endif %}
-            <a href="{% url 'profile' %}" class="dropdown-item">My Profile</a>
-            <a href="{% url 'account_logout' %}" class="dropdown-item">Logout</a>
+            <a href="{% url 'profile' %}" class="dropdown-item" aria-label="search">My Profile</a>
+            <a href="{% url 'account_logout' %}" class="dropdown-item" aria-label="search">Logout</a>
         {% else %}
-            <a href="{% url 'account_signup' %}" class="dropdown-item">Register</a>
-            <a href="{% url 'account_login' %}" class="dropdown-item">Login</a>
+            <a href="{% url 'account_signup' %}" class="dropdown-item" aria-label="search">Register</a>
+            <a href="{% url 'account_login' %}" class="dropdown-item" aria-label="search">Login</a>
         {% endif %}
     </div>
 </li>
