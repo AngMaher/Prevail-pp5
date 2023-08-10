@@ -73,7 +73,10 @@ body {
     min-width: 260px;
     margin-bottom: 10px;
 }
-
+.headings {
+    color:#D5a6bd;
+    font-weight: 800;
+}
 .links {                
     text-decoration: none;
     color:#D5a6bd;
@@ -188,6 +191,14 @@ a.category-badge > span.badge:hover {
 .update-link,
 .remove-item {
     cursor: pointer;   
+}
+
+.footer-section {
+    margin: 0;
+}
+
+.home-section {
+    padding-top: 200px;
 }
 
 /*------------------------bootstrap toasts */
@@ -430,6 +441,10 @@ a.category-badge > span.badge:hover {
         padding-top: 200px;
     }
  
+    .home-section {
+        padding-top: 150px;
+    }
+    
     .display-4.logo-font.text-black {
     font-size: 2rem;
     }
