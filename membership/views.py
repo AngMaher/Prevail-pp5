@@ -1,8 +1,11 @@
-from django.shortcuts import render, redirect, reverse
+from django.shortcuts import render, redirect, reverse, get_object_or_404
 from classes.models import Classes
 from classes.views import class_detail
 from .forms import MembershipForm
 from django.contrib import messages
+from django.template.loader import render_to_string
+from django.conf import settings
+from .models import Membership
 
 
 def membership(request):

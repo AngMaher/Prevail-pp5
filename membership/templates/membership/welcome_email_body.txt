@@ -1,0 +1,15 @@
+Hi {{ form.first_name }}
+
+Welcome to Prevail Weight Loss.
+
+We will send on our plan to start your weight loss journey in the next email.
+
+Our plan is the best out there and you will not regret startung this journey.
+
+We will forward on a password to join our community on our tracking application
+
+once you attend your first class.
+
+Thank you from
+
+The Prevail Weight Loss Team
