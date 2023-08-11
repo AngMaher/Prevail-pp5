@@ -454,6 +454,9 @@ a.category-badge > span.badge:hover {
         font-size: 1rem;
     }
 
+    .accounts {
+        width: 100%;
+    }
     .navbar-toggler {
         padding: .6rem .6rem;
         font-size: 1rem;

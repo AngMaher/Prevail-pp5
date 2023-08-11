@@ -139,15 +139,15 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 | --- | --- | --- | --- |
 | Home | ![screenshot](docs/testing/lighthouse/lighthouse-home.png) | No major warnings |
 | Products | ![screenshot](docs/testing/lighthouse/lighthouse-products.png) | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
+| Product detail | ![screenshot](docs/testing/lighthouse/lighthouse-product-detail.png) | No major warnings |
+| Bag | ![screenshot](docs/testing/lighthouse/lighthouse-bag.png) | No major warnings |
+| Checkout | ![screenshot](docs/testing/lighthouse/lighthouse-checkout.png) | No major warnings |
+| Checkout Success | ![screenshot](docs/testing/lighthouse/lighthouse-checkout-success.png) | No major warnings |
+| Sign-in | ![screenshot](docs/testing/lighthouse/lighthouse-signin.png) | No major warnings |
+| Register | ![screenshot](docs/testing/lighthouse/lighthouse-register.png) | No major warnings |
+| embership | ![screenshot](docs/testing/lighthouse/lighthouse-membership.png) | No major warnings |
+| Class Detail | ![screenshot](docs/testing/lighthouse/lighthouse-class-detail.png) | No major warnings |
+| Member Form | ![screenshot](docs/testing/lighthouse/lighthouse-member-form.png) | No major warnings |
 | Home | ![screenshot]() | No major warnings |
 | Home | ![screenshot]() | No major warnings |
 | Home | ![screenshot]() | No major warnings |
