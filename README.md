@@ -1,57 +1,5 @@
 # Prevail Weight loss Group
 
-# Contents
-
-  - [User Experience](#user-experience)
-
-    - [Wireframes](#wireframes)
-
-    - [Colour Scheme](#colour-scheme)
-
-  - [Agile](#agile)
-
-    - [The Ideal User Persona](#the-ideal-userpersona)
-
-    - [User Goals](#user-goals)
-
-    - [Developer Goals](#developer-goals)
-
-    - [Goals not completed](#goals-not-completed)
-
-  - [Logic and Features](#logic-and-features)
-
-    - [Logic](#logic)
-      
-      - [Data Models](#data-model)
-
-    - [Features](#features)
-
-      
-
-  - [Tools and Technology](#tools-and-technology)
-
-  - [Testing](#testing)
-
-  - [Deployment](#deployment)
-
-    - [ElephantSQL Database](#elephantsql-database)
-
-    - [Cloudinary API](#cloudinary-api)
-
-    - [Heroku Deployment](#heroku-deployment)
-
-    - [Local Deployment](#local-deployment)
-
-    - [Cloning](#cloning)
-
-    - [Forking](#forking)
-
-  - [Future Development](#future-development)
-
-  - [Credits](#credits)
-
-  - [Acknowledgements](#acknowledgements)
-
 ## Purpose and Goal
 
 ## Target Audience
@@ -128,17 +76,6 @@ I decided to keep the website bright with a main colour of blue throughout the s
 
 I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my colours.
 
-I've used CSS `:root` variables to easily update the global colour scheme by changing only one value, instead of everywhere in the CSS file.
-
-```css
-:root {
-    --main-pink: #d5a6bd;
-    --dark-gray: #333333;
-    --background-colour: #fff;
-    --messages: rgb(53,152, 139, 0.6);
-}
-```
-[Back to top &uarr;](#contents)
 
 ### Typography 
 
@@ -202,8 +139,57 @@ I've used CSS `:root` variables to easily update the global colour scheme by cha
     | | quantity | IntegerField | |
     | | lineitem_total | DecimalField | |
 
+- **Products**
 
-### Entity Relationship Diagram (ERD)
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | catergory | CharField | FK to **Category** model |
+    | | sku | CharField | |
+    | | name | CharField | |
+    | | description | CharField | |
+    | | price | DecimalField | |
+    | | rating | DecimalField | |
+    | | image | ImageField | |
+
+- **Classes**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | | leader_name | CharField | |
+    | | class_county | CharField | |
+    | | class_town | CharField | |
+    | | class_address | CharField | |
+    | | class_day | CharField | |
+    | | class_info | TextField | |
+
+- **Membership**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | | first_name | CharField | |
+    | | last_name | CharField | |
+    | | email_address | EmailField | |
+    | | area | CharField | |
+
+- **Success_Stories**
+
+    | **PK** | **id** (unique) | Type | Notes |
+    | --- | --- | --- | --- |
+    | **FK** | class_atteded | FK to **Classes** | |
+    | | title | CharField | |
+    | | weight_loss | IntegerField | |
+    | | start_weight | IntegerField | |
+    | | weight_now | IntegerField | |
+    | | image_before | ImageField | |
+    | | image_after | ImageField | |
+    | | content | TextField | |
+    | | name | CharField | |
+
+
+### Database Schema
+I created an entity relationship diagram using [lucid.app](https://lucid.app/) This helped me to visualize the relationships between my data structures and made the development process easier as I had everything mapped out in front of me for reference to avoid having to reference each models.py file individually.
+
+![database schema](/docs/readme/db_schema.png)
 
 
 ## User Stories
@@ -293,7 +279,7 @@ View a full list of user stories [here](https://github.com/AngMaher/Prevail-pp5/
 ***
 ## Deployment and Procedures
 
-The live deployed application can be found deployed on [Heroku]().
+The live deployed application can be found deployed on [Heroku](https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/).
 
 ***
 ### ElephantSQL Database
@@ -308,7 +294,6 @@ To obtain your own Postgres Database, sign-up with your GitHub account, then fol
 - Select the **Region** and **Data Center** closest to you.
 - Once created, click on the new database name, where you can view the database URL and Password.
 
-[Back to top &uarr;](#content)
 
 ***
 ### Heroku Deployment
@@ -709,7 +694,6 @@ In this welcome newsletter, I've included a special discount code to entice sign
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
-## Deployment
 
 The live deployed application can be found deployed on [Heroku](https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/).
 

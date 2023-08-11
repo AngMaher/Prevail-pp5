@@ -380,6 +380,7 @@ a.category-badge > span.badge:hover {
 
 .image-banner {
     padding: 0 50px;
+    height: 100%;
 }
 
 .image-flash {
