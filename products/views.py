@@ -153,7 +153,7 @@ def category(request):
     """A view to return the classes"""
     categories = Category.objects.all()
 
-    return render(request, 'products/categories.html', {'categories': categories})
+    return render(request, 'products/categories.html', {'categories': categories})  # noqa
 
 
 @login_required
@@ -223,7 +223,8 @@ def delete_category(request, category_id):
     category = get_object_or_404(Category, pk=category_id)
     if request.method == 'POST':
         category.delete()
-        messages.success(request, f'Product {category.friendly_name} has been deleted!')
+        messages.success(request, f'Product \
+             {category.friendly_name} has been deleted!')
         return redirect(reverse('categories'))
 
     template = 'products/delete_category.html'

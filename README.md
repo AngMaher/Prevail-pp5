@@ -1,5 +1,7 @@
 # Prevail Weight loss Group
 
+![responsive](/docs/readme/responsive.png)
+
 ## Purpose and Goal
 
 ## Target Audience
@@ -62,7 +64,6 @@ Age range: 30-60
 </details>
 
 
-
 ### Color Scheme
 
 I decided to keep the website bright with a main colour of blue throughout the site. 
@@ -77,7 +78,11 @@ I decided to keep the website bright with a main colour of blue throughout the s
 I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my colours.
 
 
-### Typography 
+### Typography
+
+## Features
+
+
 
 ## Database Design
 
@@ -422,7 +427,6 @@ You can fork this repository by using the following steps:
 
 To my knowledge there are no differences between the local and deployed versions of this site.
 
-[Back to top &uarr;](#content)
 
 ### AWS S3 Bucket Creation
 

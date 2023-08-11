@@ -9,7 +9,7 @@ def stories(request):
     """A view to return Success Stories"""
     stories = Success_Stories.objects.all()
 
-    return render(request, 'success_stories/success_stories.html', {'stories': stories})
+    return render(request, 'success_stories/success_stories.html', {'stories': stories})  # noqa
 
 
 def story_detail(request, story_id):

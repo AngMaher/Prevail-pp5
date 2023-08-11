@@ -52,9 +52,9 @@ I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-val
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| style.css | ![screenshot]() | Pass: No Errors |
-| checkout.css | ![screenshot]() | Pass: No Errors |
-| profile.css | ![screenshot]() | Pass: No Errors |
+| style.css | ![screenshot](docs/testing/css/css-static.png) | Pass: No Errors |
+| checkout.css | ![screenshot](docs/testing/css/css-checkout.png) | Pass: No Errors |
+| profile.css | ![screenshot](docs/testing/css/css-profiles.png) | Pass: No Errors |
 
 ### JavaScript
 
@@ -62,43 +62,62 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| konami-code.js | ![screenshot]() | Pass: No Errors |
 | countryfields.js | ![screenshot]() | Pass: No Errors |
-| add_post.html (postloadjs) | ![screenshot]() | Pass: No Errors |
-| edit_post.html (postloadjs) | ![screenshot]() | Pass: No Errors |
-| add_product.html (postloadjs) | ![screenshot]() | Pass: No Errors |
-| edit_product.html (postloadjs) | ![screenshot]() | Pass: No Errors |
-| products.html (postloadjs) | ![screenshot]() | Pass: No Errors |
-| basket.html (postloadjs) | ![screenshot]() | Pass: No Errors |
-| quantity_input_script.html (script) | ![screenshot]() | Pass: No Errors |
-| stripe_elements.js | ![screenshot]() | Undefined Stripe variable |
+| add_product.html (postloadjs) | ![screenshot](docs/testing/js/js-add-product.png) | Pass: No Errors |
+| edit_product.html (postloadjs) | ![screenshot](docs/testing/js/js-edit-product.png) | Pass: No Errors |
+| products.html (postloadjs) | ![screenshot](docs/testing/js/js-products-products.png) | Pass: No Errors |
+| bag.html (postloadjs) | ![screenshot](docs/testing/js/js-bag.html.png) | Pass: No Errors |
+| base.html (script) | ![screenshot](docs/testing/js/js-base.html.png) | Pass: No Errors |
+| stripe_elements.js | ![screenshot](docs/testing/js/stripe-elements.js.png) | pass no errors |
 
 ### Python
 
 I have used the recommended [CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
 
 | File | Screenshot | Notes |
-| --- | --- |
-| Basket contexts.py  ![screenshot]() | Pass: No Errors |
-| Basket urls.py | ![screenshot]() | Pass: No Errors |
-| Basket views.py | ![screenshot]() | Pass: No Errors |
-| Blog admin.py |  ![screenshot]() | Pass: No Errors |
-| Blog forms.py | ![screenshot]() | Pass: No Errors |
-| Blog models.py | ![screenshot]() | Pass: No Errors |
-| Blog urls.py | ![screenshot]() | Pass: No Errors |
-| Blog views.py | ![screenshot]() | Pass: No Errors |
-| Checkout admin.py | ![screenshot]() | Pass: No Errors |
-| Checkout forms.py |  ![screenshot]() | Pass: No Errors |
-| Checkout models.py | ![screenshot]() | Pass: No Errors |
-| Checkout signals.py | ![screenshot]() | Pass: No Errors |
-| Checkout urls.py | ![screenshot]() | Pass: No Errors |
-| Checkout views.py | ![screenshot]() | Pass: No Errors |
-| Checkout webhook_handler.py | ![screenshot]() | Pass: No Errors |
-| Checkout webhooks.py | ![screenshot]() | Pass: No Errors |
-| Contact admin.py | ![screenshot]() | Pass: No Errors |
-| Contact forms.py | ![screenshot]() | Pass: No Errors |
-| Contact models.py | ![screenshot]() | Pass: No Errors |
-| Contact urls.py | ![screenshot]() | Pass: No Errors |
+| --- | --- | --- |
+| Bag contexts.py | ![screenshot](docs/testing/python/bagcontext.png) | Pass: No Errors |
+| Bag urls.py | ![screenshot](docs/testing/python/bag-urls.png) | Pass: No Errors |
+| Bag views.py | ![screenshot](docs/testing/python/bag-views.png) | Pass: No Errors |
+| Checkout admin.py | ![screenshot](docs/testing/python/checkout-admin.png) | Pass: No Errors |
+| Checkout forms.py |  ![screenshot](docs/testing/python/checkout-forms.png) | Pass: No Errors |
+| Checkout models.py | ![screenshot](docs/testing/python/checkout-models.png) | Pass: No Errors |
+| Checkout signals.py | ![screenshot](docs/testing/python/checkout-signals.png) | Pass: No Errors |
+| Checkout urls.py | ![screenshot](docs/testing/python/checkout-urls.png) | Pass: No Errors |
+| Checkout views.py | ![screenshot](docs/testing/python/checkout-views.png) | Pass: No Errors |
+| Checkout webhook_handler.py | ![screenshot](docs/testing/python/checkout-webhook-handler.png) | Pass: No Errors |
+| Checkout webhooks.py | ![screenshot](docs/testing/python/checkout-webhooks.png) | Pass: No Errors |
+| classes admin.py | ![screenshot](docs/testing/python/classes-admin.png) | Pass: No Errors |
+| classes forms.py | ![screenshot](docs/testing/python/classes-form.png) | Pass: No Errors |
+| classes models.py | ![screenshot](docs/testing/python/classes-models.png) | Pass: No Errors |
+| classes urls.py | ![screenshot](docs/testing/python/classes-urls.png) | Pass: No Errors |
+| classes views.py | ![screenshot](docs/testing/python/classes-views.png) | Pass: No Errors |
+| home urls.py | ![screenshot](docs/testing/python/home-urls.png) | Pass: No Errors |
+| home views.py | ![screenshot](docs/testing/python/home-views.png) | Pass: No Errors |
+| membership admin.py | ![screenshot](docs/testing/python/membership-admin.png) | Pass: No Errors |
+| membership forms.py | ![screenshot](docs/testing/python/membership-forms.png) | Pass: No Errors |
+| membership models.py | ![screenshot](docs/testing/python/membership-models.png) | Pass: No Errors |
+| membership urls.py | ![screenshot](docs/testing/python/membership-urls.png) | Pass: No Errors |
+| membership views.py | ![screenshot](docs/testing/python/membership-views.png) | Pass: No Errors |python/
+| prevail settings.py | ![screenshot](docs/testing/python/prevail-settings.png) | Pass: No Errors |
+| prevail urls.py | ![screenshot](docs/testing/python/prevail-urls.png) | Pass: No Errors |
+| prevail views.py | ![screenshot](docs/testing/python/prevail-views.png) | Pass: No Errors |
+| products admin.py | ![screenshot](docs/testing/python/products-admin.png) | Pass: No Errors |
+| products forms.py | ![screenshot](docs/testing/python/products-forms.png) | Pass: No Errors |
+| products models.py | ![screenshot](docs/testing/python/products-moldels.png) | Pass: No Errors |
+| products urls.py | ![screenshot](docs/testing/python/products-urls.png) | Pass: No Errors |
+| products views.py | ![screenshot](docs/testing/python/products-views.png) | Pass: No Errors |
+| products widgets.py | ![screenshot](docs/testing/python/products-widgets.png) | Pass: No Errors |
+| profile views.py | ![screenshot](docs/testing/python/profile-views.png) | Pass: No Errors |
+| profile forms.py | ![screenshot](docs/testing/python/profiles-forms.png) | Pass: No Errors |
+| profile models.py | ![screenshot](docs/testing/python/profiles-models.png) | Pass: No Errors |
+| profile urls.py | ![screenshot](docs/testing/python/profiles-urls.png) | Pass: No Errors |
+| custom storage.py | ![screenshot](docs/testing/python/ss-custom-storage.png) | Pass: No Errors |
+| success stories admin.py | ![screenshot](docs/testing/python/success-stories-admin.png) | Pass: No Errors |
+| success stories forms.py | ![screenshot](docs/testing/python/success-stories-forms.png) | Pass: No Errors |
+| success stories models.py | ![screenshot](docs/testing/python/success-stories-models.png) | Pass: No Errors |
+| success stories urls.py | ![screenshot](docs/testing/python/success-stories-urls.png) | Pass: No Errors |
+| success stories views.py | ![screenshot](docs/testing/python/success-stories-views.png) | Pass: No Errors |
 
 
 ## Browser Compatibility
@@ -107,57 +126,36 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
-| Chrome | ![screenshot]() | Works as expected |
-| Firefox | ![screenshot]() | Works as expected |
-| Edge | ![screenshot]() | Works as expected |
+| Chrome | ![screenshot](docs/testing/browsers/chrome.png) | Works as expected |
+| Safari | ![screenshot]() | Works as expected |
+| Edge | ![screenshot](docs/testing/browsers/edge.png) | Works as expected |
 
-## Responsiveness
-
-I've tested my deployed project on multiple devices to check for responsiveness issues.
-
-| Device | Screenshot | Notes |
-| --- | --- | --- |
-| Mobile (DevTools) | ![screenshot](documentation/testing/responsive-mobile.png) ![screenshot](documentation/testing/responsive-mobile-menu.png) ![screenshot](documentation/testing/responsive-mobile-products.png) | Works as expected |
-| Tablet (DevTools) | ![screenshot](documentation/testing/responsive-tablet.png) ![screenshot](documentation/testing/responsive-tablet-menu.png) ![screenshot](documentation/testing/responsive-tablet-products.png) | Works as expected |
-| Laptop | ![screenshot](documentation/testing/responsive-laptop.png) ![screenshot](documentation/testing/responsive-laptop-products.png) | Works as expected |
-| Desktop | ![screenshot](documentation/testing/responsive-desktop.png) ![screenshot](documentation/testing/responsive-desktop-products.png) | Works as expected |
 
 ## Lighthouse Audit
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
-| Page | Size | Screenshot | Notes |
+| Page  | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | Desktop | ![screenshot]() | No major warnings |
-| Home | Mobile | ![screenshot]() | Some minor warnings |
-| All Products | Desktop | ![screenshot](documentation/testing/lighthouse-all-products-desktop.png) | Some minor warnings |
-| All Products | Mobile | ![screenshot](documentation/testing/lighthouse-all-products-mobile.png) | Some minor warnings |
-| Individual Product | Desktop | ![screenshot](documentation/testing/lighthouse-product-desktop.png) | No major warnings |
-| Individual Product | Mobile | ![screenshot](documentation/testing/lighthouse-product-mobile.png) | Some minor warnings |
-| Contact | Desktop | ![screenshot](documentation/testing/lighthouse-contact-desktop.png) | No major warnings |
-| Contact | Mobile | ![screenshot](documentation/testing/lighthouse-contact-mobile.png) | Some minor warnings |
-| Blog | Desktop | ![screenshot](documentation/testing/lighthouse-blog-desktop.png) | No major warnings |
-| Blog | Mobile | ![screenshot](documentation/testing/lighthouse-blog-mobile.png) | Some minor warnings |
-| Blog Post | Desktop | ![screenshot](documentation/testing/lighthouse-blog-post-desktop.png) | No major warnings |
-| Blog Post | Mobile | ![screenshot](documentation/testing/lighthouse-blog-post-mobile.png) | Some minor warnings |
-| Sign Up | Desktop | ![screenshot](documentation/testing/lighthouse-signup-desktop.png) | No major warnings |
-| Sign Up | Mobile | ![screenshot](documentation/testing/lighthouse-signup-mobile.png) | Some minor warnings |
-| Sign In | Desktop | ![screenshot](documentation/testing/lighthouse-login-desktop.png) | No major warnings |
-| Sign In | Mobile | ![screenshot](documentation/testing/lighthouse-login-mobile.png) | Some minor warnings |
-| Password Reset | Desktop | ![screenshot](documentation/testing/lighthouse-password-reset-desktop.png) | No major warnings |
-| Password Reset | Mobile | ![screenshot](documentation/testing/lighthouse-password-reset-mobile.png) | Some minor warnings |
-| Search | Desktop | ![screenshot](documentation/testing/lighthouse-search-desktop.png) | No major warnings |
-| Search | Mobile | ![screenshot](documentation/testing/lighthouse-search-mobile.png) | Some minor warnings |
-| Log Out | Desktop | ![screenshot](documentation/testing/lighthouse-logout-desktop.png) | No major warnings |
-| Log Out | Mobile | ![screenshot](documentation/testing/lighthouse-logout-mobile.png) | Some minor warnings |
-| Basket | Desktop | ![screenshot](documentation/testing/lighthouse-basket-desktop.png) | No major warnings |
-| Basket | Mobile | ![screenshot](documentation/testing/lighthouse-basket-mobile.png) | Some minor warnings |
-| Checkout | Desktop | ![screenshot](documentation/testing/lighthouse-checkout-desktop.png) | No major warnings |
-| Checkout | Mobile | ![screenshot](documentation/testing/lighthouse-checkout-mobile.png) | Some minor warnings |
-| Checkout Success | Desktop | ![screenshot](documentation/testing/lighthouse-checkout-success-desktop.png) | Some minor warnings |
-| Checkout Success | Mobile | ![screenshot](documentation/testing/lighthouse-checkout-success-mobile.png) | Some minor warnings |
-| Profile | Desktop | ![screenshot](documentation/testing/lighthouse-profile-desktop.png) | No major warnings |
-| Profile | Mobile | ![screenshot](documentation/testing/lighthouse-profile-mobile.png) | Some minor warnings |
+| Home | ![screenshot](docs/testing/lighthouse/lighthouse-home.png) | No major warnings |
+| Products | ![screenshot](docs/testing/lighthouse/lighthouse-products.png) | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+| Home | ![screenshot]() | No major warnings |
+
 
 ## Defensive Programming
 

@@ -54,11 +54,7 @@ body {
     width: 1.5rem;
 }
 
-.nav-headers {
-    text-transform: camelcase;
-}
 .logo-font {
-    text-transform: camelcase;
     font-family: 'Dancing Script';
     letter-spacing: 4px;
 }
@@ -435,7 +431,7 @@ a.category-badge > span.badge:hover {
     }
 
     body {
-        height: calc(100vh 116px);
+        height: calc(100vh - 116px);
     }
 
     .header-container {
@@ -494,5 +490,3 @@ a.category-badge > span.badge:hover {
         padding: 0;
     }
 }
-
-

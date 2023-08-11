@@ -14,7 +14,7 @@ class ProductForm(forms.ModelForm):
             'description': SummernoteWidget()
         }
 
-    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)
+    image = forms.ImageField(label='Image', required=False, widget=CustomClearableFileInput)  # noqa
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
