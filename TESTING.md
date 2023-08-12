@@ -136,24 +136,34 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
 | Page  | Screenshot | Notes |
-| --- | --- | --- | --- |
+| --- | --- | --- |
 | Home | ![screenshot](docs/testing/lighthouse/lighthouse-home.png) | No major warnings |
 | Products | ![screenshot](docs/testing/lighthouse/lighthouse-products.png) | No major warnings |
 | Product detail | ![screenshot](docs/testing/lighthouse/lighthouse-product-detail.png) | No major warnings |
+| Add a Product | ![screenshot](docs/testing/lighthouse/lighthouse-product-detail.png) | No major warnings |
 | Bag | ![screenshot](docs/testing/lighthouse/lighthouse-bag.png) | No major warnings |
 | Checkout | ![screenshot](docs/testing/lighthouse/lighthouse-checkout.png) | No major warnings |
 | Checkout Success | ![screenshot](docs/testing/lighthouse/lighthouse-checkout-success.png) | No major warnings |
 | Sign-in | ![screenshot](docs/testing/lighthouse/lighthouse-signin.png) | No major warnings |
 | Register | ![screenshot](docs/testing/lighthouse/lighthouse-register.png) | No major warnings |
-| embership | ![screenshot](docs/testing/lighthouse/lighthouse-membership.png) | No major warnings |
+| Membership | ![screenshot](docs/testing/lighthouse/lighthouse-membership.png) | No major warnings |
 | Class Detail | ![screenshot](docs/testing/lighthouse/lighthouse-class-detail.png) | No major warnings |
 | Member Form | ![screenshot](docs/testing/lighthouse/lighthouse-member-form.png) | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
-| Home | ![screenshot]() | No major warnings |
+| List of Classes | ![screenshot](docs/testing/lighthouse/lighthouse-classes.png) | No major warnings |
+| Add Class | ![screenshot](docs/testing/lighthouse/lighthouse-add-class.png) | No major warnings |
+| Edit a Class | ![screenshot](docs/testing/lighthouse/lighthouse-edit-class.png) | No major warnings |
+| Delete Class | ![screenshot](docs/testing/lighthouse/lighthouse-delete-class.png) | No major warnings |
+| List of Classes | ![screenshot](docs/testing/lighthouse/lighthouse-classes.png) | No major warnings |
+| Add Class | ![screenshot](docs/testing/lighthouse/lighthouse-add-class.png) | No major warnings |
+| Edit a Class | ![screenshot](docs/testing/lighthouse/lighthouse-edit-class.png) | No major warnings |
+| Delete Class | ![screenshot](docs/testing/lighthouse/lighthouse-delete-class.png) | No major warnings |
+| Add Success Story | ![screenshot](docs/testing/lighthouse/lighthouse-add-story.png) | No major warnings |
+| Edit Success Story  | ![screenshot](docs/testing/lighthouse/lighthouse-edit-story.png) | No major warnings |
+| Delete Story | ![screenshot](docs/testing/lighthouse/lighthouse-delete-story.png) | No major warnings |
+| How it works | ![screenshot](docs/testing/lighthouse/lighthouse-how-it-works.png) | No major warnings |
+| Profile | ![screenshot](docs/testing/lighthouse/lighthouse-profile.png) | No major warnings |
+| Sign Out | ![screenshot](docs/testing/lighthouse/lighthouse-signout.png) | No major warnings |
+| Delete Product | ![screenshot](docs/testing/lighthouse/lighthouse-delete-product.png) | No major warnings |
 | Home | ![screenshot]() | No major warnings |
 
 
@@ -166,15 +176,14 @@ Defensive programming was manually tested with the below user acceptance testing
 | **Home Page** | | | | |
 | | Click on Logo | Redirection to Home page | Pass | |
 | | Click on Shop Now button | Redirection to All Products page | Pass | |
-| | Enter Konami code correctly on keyboard | Sound plays and modal pops up giving discount code | Pass | |
-| | Enter Konami code incorrectly on keyboard | Nothing | Pass | |
+| | Click on Join a class button | Redirection to Membership page | Pass | |
 | **All Products Page** | | | | |
 | | Click on All Products link in navbar | Redirection to All Products page | Pass | |
 | | Click on All Products By Price link in navbar | Redirection to All Products page | Pass | Products sorted by price low to high |
-| | Click on All Products By Platform link in navbar | Redirection to All Products page | Pass | Products sorted by platform with platform sorted A-Z |
-| | Click on All Products By Release Year link in navbar | Redirection to All Products page | Pass | Products sorted by release year old - new |
-| | Click on Games By Nintendo link in navbar | Redirection to All Products page | Pass | Products filtered to Games on Nintendo consoles |
-| | Click on Games By Sega link in navbar | Redirection to All Products page | Pass | Products filtered to Games on Sega consoles |
+| | Click on All Products By Rating link in navbar | Redirection to All Products page | Pass | Products sorted by Rating sorted high to low |
+| | Click on All Products By Category in navbar | Redirection to All Products page | Pass | Products sorted by category A-Z |
+| | Click on Kitchen link in navbar | Redirection to All Products page | Pass | Products filtered to kitchen products |
+| | Click on Bathroom Scales in navbar | Redirection to All Products page | Pass | Products filtered to Bathroom Scales |
 | | Click on Games By Sony link in navbar | Redirection to All Products page | Pass | Products filtered to Games on Sony consoles |
 | | Click on Consoles By Nintendo link in navbar | Redirection to All Products page | Pass | Products filtered to Nintendo consoles |
 | | Click on Consoles By Sega link in navbar | Redirection to All Products page | Pass | Products filtered to Sega consoles |
@@ -189,47 +198,22 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click on Platform (Z-A) in Sort by... dropdown | Redirection to All Products page | Pass | Products sorted by platform Z-A |
 | | Click on Product card image | Redirection to Product Detail page for that product | Pass | |
 | | Click on Product card name | Redirection to Product Detail page for that product | Pass | |
-| | Click on Add to basket button | Product added to basket | Pass | Single quantity added to basket |
-| | Click on disabled Add to basket button | Nothing | Pass | |
-| | Click on edit product button | Redirection to Edit Product page for that product | Pass | Button only appears if logged in user is an admin |
-| | Click on delete product button | Redirection to Delete Product confirmation page for that product | Pass | Button only appears if logged in user is an admin |
+| | Click on Category on card | Redirection to Products page for that category | Pass | |
+| | Click on Edit product button | Redirection to Edit Product page for that product | Pass | Button only appears if logged in user is an admin |
+| | Click on Delete product button | Redirection to Delete Product confirmation page for that product | Pass | Button only appears if logged in user is an admin |
 | **Product Detail Page** | | | | |
-| | Click on Product image or name in all products page | Redirection to Product Detail page | Pass | |
 | | Click on Keep Shopping button | Redirection to All Products page | Pass | |
-| | Click + button on quantity selector form | Quantity number increases if number + 1 is less than or equal to product's stock | Pass | |
+| | Click + button on quantity selector form | Quantity number increases if number + 1  | Pass | |
 | | Click - button on quantity selector form | Quantity number decreases if current quantity is greater than one | Pass | |
-| | Click + button on quantity selector form if quantity is at the product's stock | Nothing | Pass | |
-| | Manually enter number greater than product stock in quantity selector form | Error message appears letting the user know what the product's stock is | Pass | |
-| | Click Add To Basket button | Product is added to basket and quantity is set to the user's choice | Pass | |
-| | Click Add To Basket button when user already has the product in their basket | Quantity selected is added to the existing quantity in the user's basket for the product | Pass | Only applicable if quantity being added plus existing quantity remains less than or equal to product's stock |
-| | Click Add To Basket button when user already has the product in their basket and quantity selected plus existing quantity is greater than product's stock | Message appears informing user that they're trying to add more quantity than the product has in stock and nothing is added | Pass | |
+| | Click Add To Bag button | Product is added to basket and quantity is set to the user's choice | Pass | |
+| | Click Add To Bag button when user already has the product in their basket | Quantity selected is added to the existing quantity in the user's basket for the product | Pass | Only applicable if quantity being added ||
+| | Click on Category | Redirection to Products page for that category | Pass | |
 | | Click on edit product button | Redirection to Edit Product page for that product | Pass | Button only appears if logged in user is an admin |
 | | Click on delete product button | Redirection to Delete Product confirmation page for that product | Pass | Button only appears if logged in user is an admin |
 | **Search** | | | | |
 | | Enter word into search bar that appears in at least one product's name or description | Redirection to Products page | Pass | Products filtered to only show products containing search term |
 | | Enter word into search bar that doesn't appear in any product's name or description | Redirection to Products page | Pass | Products page is empty and shows user that 0 products were returned |
 | | Enter nothing into search bar | Redirection to Products page | Pass | Error message shows and lets user know they entered nothing into the search bar and all products are displayed |
-| **Contact Page** | | | | |
-| | Click on Contact Us link in footer | Redirection to Contact Us page | Pass | |
-| | Enter name | Form will only submit if all fields are filled | Pass | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Enter message | Form will only submit if all fields are filled | Pass | |
-| | Click Send with missing fields | Message lets user know all fields are required | Pass | |
-| | Click Send with all valid fields | User is sent email confirming their message has been received and new ticket is created in open tickets page for admin | Pass | |
-| **Blog Page** | | | | |
-| | Click on the Blog link in nav menu | Redirection to Blog page | Pass | |
-| | Click on the Blog link in footer | Redirection to Blog page | Pass | |
-| | Click on Blog post | Redirection to Blog Post page | Pass | |
-| | Click on edit blog button | Redirection to Edit Blog page for that post | Pass | Button only appears if logged in user is an admin |
-| | Click on delete blog button | Redirection to Delete Blog confirmation page for that post | Pass | Button only appears if logged in user is an admin |
-| **Blog Post** | | | | |
-| | Click on Blog post on blog page | Redirection to Blog Post page | Pass | |
-| | Click hollow heart icon | Alert pops up confirming post has been liked, heart icon turns solid red and like count increases by 1 | Pass | Only if user is logged in, nothing happens if logged out |
-| | Click filled in heart icon | Alert pops up confirming post has been unliked, heart icon turns hollow and like count decreases by 1 | Pass | |
-| | Click Submit button under comment form | Comment added to post | Pass | Comment only added if field is filled |
-| | Click Submit button under empty comment form | Message appears for user informing them they need to fill the body field | Pass | |
-| | Click on edit blog button | Redirection to Edit Blog page for that post | Pass | Button only appears if logged in user is an admin |
-| | Click on delete blog button | Redirection to Delete Blog confirmation page for that post | Pass | Button only appears if logged in user is an admin |
 | **Sign Up Page** | | | | |
 | | Click on Register button under account on nav menu | Redirection to Sign Up page | Pass | |
 | | Enter valid email address | Field will only accept email address format | Pass | |
@@ -243,9 +227,6 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click Login button on login page | Redirects user to homepage | Pass | |
 | | Click Forgot Password | Redirects user to password reset page | Pass | |
 | | Sign in before confirming account | Redirects to message reminding user to confirm email address | Pass | |
-| **Password Reset Page** | | | | |
-| | Enter valid email address | Field will only accept email address format | Pass | |
-| | Click Reset Password button | Sends email with instructions to reset password | Pass | |
 | **Log Out Page** | | | | |
 | | Click Logout button | Redirects user to logout page | Pass | Confirms logout first |
 | | Click Confirm Logout button | Redirects user to home page | Pass | |
@@ -254,7 +235,7 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click Update Information button | Saves form contents to be default information for user | Pass | Default information is cleared if form is submitted while blank |
 | | Click Order Number for previous order in Order History | Redirects user to order confirmation page for that order | Pass | |
 | | Brute forcing the URL to profile if not logged in | User given an error | Pass | Redirects user to error page |
-| **Basket** | | | | |
+| **Bag** | | | | |
 | | Click Basket icon in main nav | Redirects user to basket page | Pass | Shows back to shop button if basket is empty |
 | | Click Confirm Logout button | Redirects user to home page | Pass | |
 | | Click + button on quantity selector form | Quantity number increases if number + 1 is less than or equal to product's stock | Pass | |
@@ -291,100 +272,145 @@ Defensive programming was manually tested with the below user acceptance testing
 | | Click Add Product button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
 | | Set product's stock to be less than 1 | Product will be created but appear on the site as sold out with add to basket button disabled | Pass | |
 | | Click Add Product button with no image set | Product will be created but will be displayed with default product image | Pass | |
+| | Brute forcing the URL to add a new product  if not logged in | User given an error | Pass | Error message stating only store owners can do that |
 | | Brute forcing the URL to add a new product if not an admin | User given an error | Pass | Redirects user to error page |
 | **Edit Product Page** | | | | |
 | | Click edit icon on product | Redirects user to Edit Product page | Pass | User must be an admin to see icon and access this page |
 | | Click Cancel button | Redirects admin to all products page | Pass | |
 | | Click Update Product button with form filled correctly | Updates product with information provided | Pass | |
 | | Click Update Product button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
-| | Set product's stock to be less than 1 | Product will be updated but appear on the site as sold out with add to basket button disabled | Pass | |
 | | Click Update Product button with no image set | Product will be updated but will be displayed with default product image | Pass | |
-| | Brute forcing the URL to edit a product if not an admin | User given an error | Pass | Redirects user to error page |
+| | Brute forcing the URL to edit a new product  if logged in | User given an error | Pass | Error message stating only store owners can do that |
+| | Brute forcing the URL to edit a product if not an admin | User given an error | Pass | Redirects user to sign in |
 | **Delete Product Page** | | | | |
 | | Click delete icon on product | Redirects user to Edit Product page | Pass | User must be an admin to see icon and access this page |
 | | Click Cancel button | Redirects admin to product detail page for selected product | Pass | |
 | | Click Delete Product button | Product will be completely deleted from the site | Pass | |
-| | Brute forcing the URL to delete a product if not an admin | User given an error | Pass | Redirects user to error page |
-| **Add Blog Page** | | | | |
-| | Click Add New Blog Post link from Admin dropdown | Redirects admin to add blog page | Pass | User can only see this if they're logged in as an admin |
-| | Click Cancel button | Redirects admin to blog | Pass | |
-| | Click Add Post button with form filled correctly | Creates a new blog post on the site using the information provided | Pass | |
-| | Click Add Post button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
-| | Click Add Post button with no image set | Blog post will be created but will be displayed with default blog post image | Pass | |
-| | Brute forcing the URL to add a new blog post if not an admin | User given an error | Pass | Redirects user to error page |
-| **Edit Blog Page** | | | | |
-| | Click edit icon on blog post | Redirects user to Edit Blog Post page | Pass | User must be an admin to see icon and access this page |
-| | Click Cancel button | Redirects admin to blog | Pass | |
-| | Click Update Post button with form filled correctly | Updates blog post with information provided | Pass | |
-| | Click Update Post button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
-| | Click Update Post button with no image set | Blog post will be updated but will be displayed with default blog post image | Pass | |
-| | Brute forcing the URL to edit a blog post if not an admin | User given an error | Pass | Redirects user to error page |
-| **Delete Blog Page** | | | | |
-| | Click delete icon on blog post | Redirects user to Delete Blog post page | Pass | User must be an admin to see icon and access this page |
-| | Click Cancel button | Redirects admin to blog | Pass | |
-| | Click Delete Post button | Blog post will be completely deleted from the site | Pass | |
-| | Brute forcing the URL to delete a blog post if not an admin | User given an error | Pass | Redirects user to error page |
-| **Open Tickets Page** | | | | |
-| | Click View Open Tickets link from Admin dropdown | Redirects admin to open tickets | Pass | User can only see this if they're logged in as an admin |
-| | Click Close Ticket button on ticket | Marks ticket as seen and removes it from list of open tickets | Pass | If last open ticket is closed the page will contain just a header saying No Open Tickets |
-| | Brute forcing the URL to access open ticket page if not an admin | User given an error | Pass | Redirects user to error page |
+| | Brute forcing the URL to delete a new product  if not logged in | User given an error | Pass | Error message stating only store owners can do that |
+| | Brute forcing the URL to delete a product if not an admin | User given an error | Pass | Redirects user to login page |
+| **Add Classes Page** | | | | |
+| | Click Class Management link from Account dropdown | Redirects admin to add Class page | Pass | User can only see this if they're logged in as an admin |
+| | Click Cancel button | Redirects admin to Classes List | Pass | |
+| | Click Add Class button with form filled correctly | Creates a new class on the site using the information provided | Pass | |
+| | Click Add Class button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
+| | Brute forcing the URL to add a new class  if not logged in | User given an error | Pass | Error message stating only store owners can do that |
+| | Brute forcing the URL to add a new class if not an admin | User given an error | Pass | Redirects user to error page |
+| **Edit Classes Page** | | | | |
+| | Click edit icon on class list | Redirects user to Edit class page displaying the class details | Pass | User must be an admin to see icon and access this page |
+| | Click Cancel button | Redirects admin to class list | Pass | |
+| | Click Update class button with form filled correctly | Updates class with information provided | Pass | |
+| | Click Update class button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
+| | Brute forcing the URL to add a new class if not logged in | User given an error | Pass | Error message stating only store owners can do that |
+| | Brute forcing the URL to edit a class if not an admin | User given an error | Pass | Redirects user to sign in |
+| **Delete Classes Page** | | | | |
+| | Click delete icon on class | Redirects user to Delete class page | Pass | User must be an admin to see icon and access this page |
+| | Click Cancel button | Redirects admin to class list | Pass | |
+| | Click Delete Post button | Class will be completely deleted from the site | Pass | |
+| | Brute forcing the URL to delete a class  if not logged in | User given an error | Pass | Error message stating only store owners can do that |
+| | Brute forcing the URL to delete a class if not an admin | User given an error | Pass | Redirects user to sign in |
+| **Add Success Stories Page** | | | | |
+| | Click Story Management link from My Account dropdown | Redirects admin to add success story page | Pass | User can only see this if they're logged in as an admin |
+| | Click Cancel button | Redirects admin to Success Stories | Pass | |
+| | Click Add New Stroy button with form filled correctly | Creates a new story on the site using the information provided | Pass | |
+| | Click Add New Story button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
+| | Click Add New Story button with no image set | Story will be created but will be displayed with default success story image | Pass | |
+| | Brute forcing the URL to add a success story if not logged in | User given an error | Pass | Error message stating only store owners can do that |
+| | Brute forcing the URL to add a success story if not an admin | User given an error | Pass | Redirects user to sign in |
+| **Edit Success Stories Page** | | | | |
+| | Click edit icon on the story post | Redirects user to Edit Story page displaying the story details | Pass | User must be an admin to see icon and access this page |
+| | Click Cancel button | Redirects admin to Success Stories | Pass | |
+| | Click Edit Story button with form filled correctly | Updates Story with information provided | Pass | |
+| | Click Edit Story button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
+| | Click Edit Story button with no image set | success story will be updated but will be displayed with default success story image | Pass | |
+| | Brute forcing the URL to edit a success story if not logged in | User given an error | Pass | Error message stating only store owners can do that |
+| | Brute forcing the URL to edit a success story if not an admin | User given an error | Pass | Redirects user to sign in |
+| **Delete Success Sroties Page** | | | | |
+| | Click delete icon on success story | Redirects user to Delete Story page | Pass | User must be an admin to see icon and access this page |
+| | Click Cancel button | Redirects admin to Success Stories | Pass | |
+| | Click Delete Post button | Story will be completely deleted from the site | Pass | |
+| **Add Category Page** | | | | |
+| | Click Category link from My Account dropdown | Redirects admin to List of categoires page | Pass | User can only see this if they're logged in as an admin |
+| | Click Add Category button | Redirects admin to form to add new category | Pass | |
+| | Click Cancel button | Redirects admin back to list of categories | Pass | |
+| | Click Add Category button with form filled correctly | Creates a new category on the site using the information provided | Pass | |
+| | Click Add Category button with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
+| | Brute forcing the URL to add a new category  if not an admin | User given an error | Pass | Error message stating only store owners can do that |
+| | Brute forcing the URL to add a new category if not signed in | User given an error | Pass | Redirects user to login in |
+| **Edit Category Page** | | | | |
+| | Click edit icon on category list | Redirects user to Edit Category page | Pass | User must be an admin to see icon and access this page |
+| | Click Cancel button | Redirects admin back to Category list | Pass | |
+| | Click Update Category button with form filled correctly | Updates category with information provided | Pass | |
+| | Click Update Category with form filled incorrectly | Message appears letting the admin know to fill in the required form fields | Pass | |
+| | Brute forcing the URL to edit a category if not an admin | User given an error | Pass | Redirects user to login page |
+| **Delete Category Page** | | | | |
+| | Click delete icon on category list | Redirects user to Delete Category page | Pass | User must be an admin to see icon and access this page |
+| | Click Cancel button | Redirects admin to Category list | Pass | |
+| | Click Delete Category button | Category will be completely deleted from the site | Pass | |
+| | Brute forcing the URL to delete a category if not an admin | User given an error | Pass | Redirects user to login page |
 | **Footer** | | | | |
-| | Click Blog link in footer | Redirects user to blog page | Pass | |
-| | Click Contact Us link in footer | Redirects user to contact page | Pass | |
-| | Click social media icons in footer | Opens social media site clicked in a new tab | Pass | |
-| | Click on Games By Nintendo link in footer | Redirection to All Products page | Pass | Products filtered to Games on Nintendo consoles |
-| | Click on Games By Sega link in footer | Redirection to All Products page | Pass | Products filtered to Games on Sega consoles |
-| | Click on Games By Sony link in footer | Redirection to All Products page | Pass | Products filtered to Games on Sony consoles |
-| | Click on Consoles By Nintendo link in footer | Redirection to All Products page | Pass | Products filtered to Nintendo consoles |
+| | Click Home link in footer | Redirects user to home page | Pass | |
+| | Click Join Now link in footer | Redirects user to Membership page | Pass | |
+| | Click Shop link in footer | Redirects user to Products page | Pass | |
+| | Click Facebook link in footer | Opens My Facebook account clicked in a new tab | Pass | |
+| | Click on About Us in footer | Redirection to How it works page | Pass | |
+| | Click on Success Stories in footer | Redirection to Success Stories page | Pass | |
+| | Click on My Account in footer | Redirection to Profile page | Pass | |
 | | Click on Consoles By Sega link in footer | Redirection to All Products page | Pass | Products filtered to Sega consoles |
 | | Click on Consoles By Sony link in footer | Redirection to All Products page | Pass | Products filtered to Sony consoles |
-| | Click on Subscribe button on blank newsletter form | Error message appears telling user to try again | Pass | |
-| | Click on Subscribe button on filled newsletter form | Alert message lets user know they have signed up for the mailing list and welcome email is sent to address provided | Pass | |
-| | Try to subscribe to newsletter with already subscribed email address | Error message appears telling user to check the form or make sure they're not already subscribed | Pass | |
+| | Click on Subscribe button on blank newsletter form | Error message appears telling user email is a required field | Pass | |
+| | Click on Subscribe button on filled newsletter form | Alert message "Thanks for Subscribing" | Pass | |
+| | Try to subscribe to newsletter with already subscribed email address | Error message "You're already subscribed, your profile has been updated. Thank you!" | Pass | |
 
-## User Story Testing
+## User Story Testings
 
 The following are user stories I've implemented with screenshots to prove.
 
-| User Story | Screenshot |
+| User Story | Pass |
 | --- | --- |
-| As a first-time site visitor I want to be able to clearly see what the site's purpose is so that I can decide whether or not to continue browsing it. | ![screenshot](documentation/testing/homepage.png) |
-| As a user I want to be able to easily navigate the website so that I can find the content I'm looking for. | ![screenshot](documentation/testing/main-nav.png) ![screenshot](documentation/testing/main-nav-dropdown.png) |
-| As a site user I want to be able to search the website so that I can find specific products and see if the site has them in stock. | ![screenshot](documentation/testing/search-bar.png) ![screenshot](documentation/testing/search-results.png) ![screenshot](documentation/testing/search.png) |
-| As a site user I want to be able to contact the site owners so that I can request further information about the site or lodge a complaint. | ![screenshot](documentation/testing/contact-page.png) ![screenshot](documentation/testing/contact-form.png) |
-| As a site user I want to be able to see a list of all site products so that I can browse what the site has to offer. | ![screenshot](documentation/testing/all-products.png) |
-| As a site user I want to be able to see the prices of products clearly so that I can make a decision whether or not to purchase. | ![screenshot](documentation/testing/product-card.png) |
-| As a site user I want to be able to view a product on its own individual page so that I can see more information about the product. | ![screenshot](documentation/testing/product-detail.png) |
-| As a site user I want to be able to sort products by category (game/console or games by console) so that I can find specific products related to the category I select. | ![screenshot](documentation/testing/product-filtering-menu.png) ![screenshot](documentation/testing/product-filtering-detail.png) |
-| As a site user I want to be able to add products to my shopping basket so that I can proceed to the checkout and purchase them. | ![screenshot](documentation/testing/add-to-basket.png) |
-| As a site user I want to be able to see a running total of the items in my basket so that I can manage my spending and know what to expect at the checkout. | ![screenshot](documentation/testing/add-to-basket-message.png) |
-| As a site user I want to be able to checkout with a card payment so that I can place an order for the items in my basket. | ![screenshot](documentation/testing/checkout.png) |
-| As a site user I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox. | ![screenshot](documentation/testing/order-confirmation-email.png) |
-| As a site user I want to be able to apply discount codes in the checkout so that I can receive a discount on my purchase. | ![screenshot](documentation/testing/discount-form.png) ![screenshot](documentation/testing/discount-added.png) |
-| As a site user I want to be able to create an account on the site so that I can save my billing and shipping details and see a history of my purchases on my account. | ![screenshot](documentation/testing/sign-up.png) |
-| As a registered user I want to be able to edit the details saved to my account so that I can keep my details up to date. | ![screenshot](documentation/testing/profile.png) ![screenshot](documentation/testing/default-delivery-form.png) |
-| As a site user I want to be able to view blog posts on the website so that I can read any posts I feel are relevant to me. | ![screenshot](documentation/testing/blog.png) ![screenshot](documentation/testing/blog-post.png) |
-| As a site admin I want to be able to create blog posts from the front end so that I can share information with site visitors. | ![screenshot](documentation/testing/add-blog.png) |
-| As a site admin I want to be able to edit existing blog posts so that I can ensure that posts are up to date and relevant without having to create them from scratch in case of error. | ![screenshot](documentation/testing/edit-blog.png) |
-| As a site admin I want to be able to delete existing blog posts so that I can remove any unwanted posts from the site. | ![screenshot](documentation/testing/delete-blog.png) |
-| As a site admin I want to be able to create new products from the front end so that I can easily add new products to the site. | ![screenshot](documentation/testing/add-product.png) |
-| As a site admin I want to be able to edit existing products so that I can ensure that all product listings are up to date and accurate. | ![screenshot](documentation/testing/edit-product.png) |
-| As a site admin I want to be able to delete products from the site so that I can remove any products that are no longer being supplied by the site. | ![screenshot](documentation/testing/delete-product.png) |
-| As a site admin I want to be able to set the stock for each product so that I can manage how many units of each product the site can sell. | ![screenshot](documentation/testing/stock-green.png) ![screenshot](documentation/testing/stock-yellow.png) ![screenshot](documentation/testing/stock-sold-out.png) |
-| As a site admin I want to be able to see a list of open tickets so that I can manage contact form inquiries. | ![screenshot](documentation/testing/open-tickets-1.png) ![screenshot](documentation/testing/single-open-ticket.png) ![screenshot](documentation/testing/no-open-tickets.png) |
-| As a site user I want to be able to sign up for the site's mailing list so that I can receive offers and news in my inbox. | ![screenshot](documentation/testing/newsletter-form.png) ![screenshot](documentation/testing/newsletter-alert.png) ![screenshot](documentation/testing/newsletter-email.png) |
-| As a site user I want to be able to enter the Konami code (Up Up Down Down Left Right Left Right B A) on my keyboard so that I can experience an easter egg. | ![screenshot](documentation/testing/konami-code-easter-egg.png) ![screenshot](documentation/testing/konami-code-modal.png) |
-| As a site admin I want to be able to set appropriate keywords on site pages so that I can increase the chances potential customers will find the site when searching to purchase records on Google. | ![screenshot](documentation/testing/seo-keywords.png) |
-| As a site admin I want to be able to share the business on Facebook so that I can reach and market to a larger audience. | ![screenshot](documentation/facebook-mockup.png) |
+| As a Site User - for the first time I can see what the site's purpose is so that I can decide whether or not to continue on the site. | PASS |
+| As a Site User I can easily see the options to navigate around the site so that I can find what I want with ease. | PASS |
+| As a Site User I can view a list of all products so that I can browse through all products. | PASS |
+| As a Site User I can easily filter products into different categories so that I can just look at what I'm interested in. | PASS |
+| As a Site User I can see a detailed view of the product so that I can get more details before I add to cart. | PASS |
+| As a Site User I can see a detailed view of the product so that I can get more details before I add to cart. | PASS |
+| As a Site User I can delete on item from the checkout bag so that I have an option to change my mind. | PASS |
+| As a Site User I can change the quantity of the product so that I can buy multiple at the same time. | PASS |
+| As a Site User I can continue shopping when I add Item to bag so that I have an easy way of doing it from the detail page or checkout bag. | PASS |
+| As a Site User I can see a breakdown of price so that I can see how much shipping will be before I buy | PASS |
+| As a Sit User I can see a summary of what I'm buying when I fill in my details so that I can check everything is correct before I commit. | PASS |
+| As a site user I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox | PASS |
+| As a site user I want to be able to create an account on the site so that I can save my billing and shipping details and see a history of my purchases on my account | PASS |
+| As a Site User I can become a Prevail member with ease so that I can quickly sign up without going through the whole website. | PASS |
+| As a Site User I can become a Prevail member with ease so that I can quickly sign up without going through the whole website. | PASS |
+| As a site admin - Prevail Management I want to be able to delete products from the site so that I can remove any products that are no longer being supplied by the site | PASS |
+| As a site admin - Prevail management I want to be able to edit existing products so that I can ensure that all product listings are up to date and accurate | PASS |
+| As a site admin I want to be able to create new products from the front end so that I can easily add new products to the site | PASS |
+| As a site user I want to be able to sign up for the site's mailing list so that I can receive offers and news in my inbox | PASS |
+| As a Site admin/prevail manager I can display success stories of members so that I can show Site Users how successful our group can be and encourage them to join. | PASS |
+| As a site admin I want to be able to set appropriate keywords on site pages so that I can increase the chances potential customers will find the site when searching to purchase records on Google | PASS |
+| As a Site User I can set up an account so that I can check past purchases and save my details. | PASS |
+| As a roleeasily login and logoutcapability so that access my personal account information. | PASS |
+| As a Site User I can see a list of items I have placed in bag so that I can see what I am purchasing | PASS |
+
 
 The following are user stories I wasn't able to implement and have labeled as Wont Have in my MoSCoW prioritization
 
 | User Story | Screenshot |
 | --- | --- |
-|  | N/A |
-
+| As a registered user I want to be able to edit the details saved to my account so that I can keep my details up to date | N/A |
+| As a Site admin - Prevail Manager I can display a post on the logged-in page of members so that I can display how each class is doing each week. | N/A |
+| As a prevail member I want to be able to view class on the website so that I can feel part of the community and see how other classes are doing. | N/A |
+| As a Site admin - Prevail Manager I can display a post on the logged-in page of members so that I can display how each class is doing each week. | N/A |
+| As a site admin -prevail manager I want to be able to edit existing updates so that I can fix an error without having to delete and re-do | N/A |
 
 
 ## Bugs
 
+| Bug | Issue| Fix |
+| --- | --- | --- |
+| Footer | I couldnt get the footer to stay at the bottom the page when different pages had different heights. | min-height: cal(100vh - 164px); in css file |
+| Spinner on checkout | Couldnt get the spinner in the checkout to work | class on one div had underscore instead of dash |
+
 ## Unfixed Bugs
+
+

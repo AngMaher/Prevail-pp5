@@ -197,6 +197,10 @@ a.category-badge > span.badge:hover {
     padding-top: 200px;
 }
 
+#delivery-banner.row {
+    margin-left: 0;
+    margin-right: 0;
+}
 /*------------------------bootstrap toasts */
 
 .message-container {

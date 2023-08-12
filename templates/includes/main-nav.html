@@ -10,7 +10,6 @@
                 All Products
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="all-products-link">
-            <a href="{% url 'account_login' %}" class="dropdown-item" aria-label="search">Login</a>
                 <a href="{% url 'products' %}?sort=price&direction=asc" class="dropdown-item" aria-label="search">By Price</a>
                 <a href="{% url 'products' %}?sort=rating&direction=desc" class="dropdown-item" aria-label="search">By Rating</a>
                 <a href="{% url 'products' %}?sort=category&direction=asc" class="dropdown-item" aria-label="search">By Category</a>
