@@ -10,9 +10,8 @@
                     </span>
                 </button>
             </div>
-            <input type="hidden" id="ItemStock" name="variable" value="{{ item.product.stock }}">
             <input class="form-control form-control-sm qty_input id_qty_{{ item.item_id }}" type="number"
-                name="quantity" value="{{ item.quantity }}" min="1" max="{{ item.product.stock }}"
+                name="quantity" value="{{ item.quantity }}" min="1" max="99"
                 data-item_id="{{ item.item_id }}" aria-label="Product quantity">
             <div class="input-group-append">
                 <button class="increment-qty btn btn-sm btn-black rounded-0 increment-qty_{{ item.item_id }}" aria-label="Increase quantity"

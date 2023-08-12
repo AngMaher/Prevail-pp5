@@ -122,7 +122,6 @@
             {% include 'includes/mobile-top-header.html' %}
             {% include 'includes/main-nav.html' %}
         </nav>
-    </div>
         <div id="delivery-banner" class="row text-center w-100">
             <div class="col bg-grey text-white w-100">
                 <h3 class="nav-headers my-1">Free delivery on orders over €{{ free_delivery_threshold }}!</h3>
@@ -157,16 +156,16 @@
 
     {% block page_header %}
     {% endblock %}
-<main>
+
     {% block content %}
     {% endblock %}
-</main>
+
 
     {% include 'includes/footer-newsletter.html' %}
 
 
     {% block postloadjs %}
-    <script type="text/javascript">
+    <script>
         $('.toast').toast('show');
 
         setTimeout(function() {
@@ -176,10 +175,10 @@
         }, 3000);
     </script>
 
-    <script type="text/javascript"
+    <script
         src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js">
     </script>
-    <script type="text/javascript">
+    <script>
         (function($) {
             window.fnames = new Array();
             window.ftypes = new Array();

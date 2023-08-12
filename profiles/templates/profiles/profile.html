@@ -46,7 +46,7 @@
                         <th>Order Total</th>
                     </tr>
                 </thead>
-                <tboby>
+                <tbody>
                     {% for order in orders %}
                         <tr>
                             <td>
@@ -68,7 +68,7 @@
                             <td>€{{ order.grand_total }}</td>
                         </tr>
                     {% endfor %}
-                </tboby>
+                </tbody>
             </table>
         </div>
     </div>

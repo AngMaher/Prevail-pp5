@@ -25,8 +25,8 @@
         <div class="col-12 col-lg-6 offset-lg-3">
             <form method="POST" action="{% url 'add_classes' %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
-                <strong>{{ form | crispy }}</strong>
-                <p><strong>Please be careful to enter time in 24hr<strong></p>
+                {{ form | crispy }}
+                <p><strong>Please be careful to enter time in 24hr</strong></p>
                 <div class="text-right">
                     <a class="btn btn-black" href="{% url 'classes' %}">Cancel</a>
                     <button class="btn btn-black" type="submit">Add New Class</button>

@@ -16,15 +16,19 @@
                 <h1 class="display-4 logo-font text-black">We're better together</h1><br>
                 <h3>Class now open!</h3>
                 <div class="dropdown">
-                    <span>
-                        <button class="btn btn-black dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Find A Class In Your County
-                        </button>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        {% for county in counties %}
-                        <a class="dropdown-item" href="{% url 'class_detail' county.id %}">{{ county.class_county }} - {{ county.class_town }}</a>
-                        {% endfor %}
-                    </span>
+                    <button class="btn btn-black dropdown-toggle"
+                        type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                    Find A Class In Your County
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                    {% for county in counties %}
+                    <a class="dropdown-item" href="{% url 'class_detail' county.id %}">
+                        {{ county.class_county }} - {{ county.class_town }}
+                    </a>
+                    {% endfor %}
+                    </div>
                 </div>
             </div>
         </div>

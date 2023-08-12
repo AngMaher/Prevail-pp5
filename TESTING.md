@@ -14,36 +14,33 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 
 | Page | Screenshot | Notes |
 | --- | --- | --- | --- |
-| Home | ![screenshot]() | Pass: No Errors |
-| All Products  | ![screenshot]() | Pass: No Errors |
+| Home | ![screenshot](docs/testing/html/html-home%20(2).png) | Pass: No Errors |
+| All Products  | ![screenshot](docs/testing/html/html-products.png) | Pass: No Errors |
 | Product Detail | ![screenshot]() | Pass: No Errors |
-| How it works  | ![screenshot]() | Pass: No Errors |
-| Success Stories | ![screenshot]() | Pass: No Errors |
-| Story Detail| ![screenshot]() | Pass: No Errors |
-| Sign Up | ![screenshot]() | Pass: No Errors |
-| Sign In | ![screenshot]() | Pass: No Errors |
-| Log Out | ![screenshot]() | Pass: No Errors |
-| Basket | ![screenshot]() | Pass: No Errors |
+| How it works  | ![screenshot](docs/testing/html/html-about.png) | Pass: No Errors |
+| Success Stories | ![screenshot](docs/testing/html/html-success-story.png) | Pass: No Errors |
+| Story Detail| ![screenshot](docs/testing/html/html-story-detail.png) | Pass: No Errors |
+| Add Story | ![screenshot](docs/testing/html/html-add-story.png) | Pass: No Errors |
+| Edit Story | ![screenshot](docs/testing/html/html-edit-story.png) | Pass: No Errors |
+| Delete Story | ![screenshot](docs/testing/html/html-delete-story.png) | Pass: No Errors |
+| Sign Up | ![screenshot](docs/testing/html/html-register.png) | Pass: No Errors |
+| Sign In | ![screenshot](docs/testing/html/html-sign-in.png) | Pass: No Errors |
+| Log Out | ![screenshot](docs/testing/html/html-sign-out.png) | Pass: No Errors |
 | Checkout | ![screenshot]() | () |
 | Checkout Success | ![screenshot]() | Pass: No Errors |
-| Profile | ![screenshot]() | Pass: No Errors |
-| Add Product | ![screenshot]() | Pass: No Errors |
-| Edit Product | ![screenshot]() | Pass: No Errors |
+| Profile | ![screenshot](docs/testing/html/html-profile.png) | Pass: No Errors |
+| List Categories  | ![screenshot](docs/testing/html/html-categories.png) | Pass: No Errors |
+| Add Category | ![screenshot](docs/testing/html/html-add-category.png) | Pass: No Errors |
+| Delete Category | ![screenshot](docs/testing/html/html-delete-category.png) | Pass: No Errors |
+| Edit Category | ![screenshot](docs/testing/html/html-edit-category.png) | Pass: No Errors |
 | Delete Product | ![screenshot]() | Pass: No Errors |
-| List Categories  | ![screenshot]() | Pass: No Errors |
-| Add Category | ![screenshot]() | Pass: No Errors |
-| Edit Category | ![screenshot]() | Pass: No Errors |
-| Delete Category | ![screenshot]() | Pass: No Errors |
-| Add Success Story | ![screenshot]() | Pass: No Errors |
-| Edit Success Story | ![screenshot]() | |
-| Delete Success Story | ![screenshot]() | Pass: No Errors |
-| Classes | ![screenshot]() | Pass: No Errors |
-| Class Detail | ![screenshot]() | Pass: No Errors |
-| Add Class | ![screenshot]() | Pass: No Errors |
-| Edit Class | ![screenshot]() | Pass: No Errors |
-| Delete Class | ![screenshot]() | Pass: No Errors |
-| Membership | ![screenshot]() | Pass: No Errors |
-| Membership form | ![screenshot]() | Pass: No Errors |
+| Classes | ![screenshot](docs/testing/html/html-classes.png) | Pass: No Errors |
+| Class Detail | ![screenshot](docs/testing/html/html-class-detail.png) | Pass: No Errors |
+ Add Class | ![screenshot](docs/testing/html/html-add-class.png) | Pass: No Errors |
+| Edit Class | ![screenshot](docs/testing/html/html-edit-class.png) | Pass: No Errors |
+| Delete Class | ![screenshot](docs/testing/html/html-delete-class.png) | Pass: No Errors |
+| Membership | ![screenshot](docs/testing/html/html-membership.png.png) | Pass: No Errors |
+| Membership form | ![screenshot](docs/testing/html/html-member-form.png) | Pass: No Errors |
 
 
 ### CSS
@@ -391,13 +388,13 @@ The following are user stories I've implemented with screenshots to prove.
 | As a Site User I can set up an account so that I can check past purchases and save my details. | PASS |
 | As a roleeasily login and logoutcapability so that access my personal account information. | PASS |
 | As a Site User I can see a list of items I have placed in bag so that I can see what I am purchasing | PASS |
+| As a registered user I want to be able to edit the details saved to my account so that I can keep my details up to date | PASS |
 
 
-The following are user stories I wasn't able to implement and have labeled as Wont Have in my MoSCoW prioritization
+The following are user stories I wasn't able to implement
 
 | User Story | Screenshot |
 | --- | --- |
-| As a registered user I want to be able to edit the details saved to my account so that I can keep my details up to date | N/A |
 | As a Site admin - Prevail Manager I can display a post on the logged-in page of members so that I can display how each class is doing each week. | N/A |
 | As a prevail member I want to be able to view class on the website so that I can feel part of the community and see how other classes are doing. | N/A |
 | As a Site admin - Prevail Manager I can display a post on the logged-in page of members so that I can display how each class is doing each week. | N/A |

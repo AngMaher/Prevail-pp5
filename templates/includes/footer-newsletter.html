@@ -1,28 +1,28 @@
-<footer class="container-wrapper">
-  <div class="row footer-section footer">
-    <div class="col-12 col-md-3">
-      <h3 class="headings">Company</h3>
-      <a class="links" href="{% url 'home' %}">Home</a><br><br>
-      <a class="links" href="{% url 'membership' %}">Join Now</a><br><br>
-      <a class="links" href="{% url 'products' %}">Shop</a><br><br>
-      <a href="https://www.facebook.com/profile.php?id=100095513502528" target="_blank" rel="noopener">
-      <i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
-    </div>
-  <div class="row">
-    <div class="col-12 col-md-3">
-      <h3 class="headings">Community</h3>
-      <a class="links" href="{% url 'about' %}">About US</a><br><br>
-      <a class="links" href="{% url 'stories' %}">Success Stories</a><br><br>
-      {% if request.user.is_authenticated %}
-        <a class="links" href="{% url 'profile' %}">My Account</a><br><br>
-      {% else %}
-        <a class="links" href="{% url 'account_login' %}">My Account</a><br><br>
-      {% endif %}
-    </div>
-    <div class="col-12 col-md-6 mx-auto">
-      <div id="mc_embed_shell">
-        <!--Mail chimp code -->
-        <div id="mc_embed_signup">
+<footer>
+  <div class="footer-container">
+    <section class="footer footer-section">
+      <div class="row">
+        <div class="col-12 col-md-3">
+          <h3 class="headings">Company</h3>
+          <a class="links" href="{% url 'home' %}">Home</a><br><br>
+          <a class="links" href="{% url 'membership' %}">Join Now</a><br><br>
+          <a class="links" href="{% url 'products' %}">Shop</a><br><br>
+          <a href="https://www.facebook.com/profile.php?id=100095513502528" target="_blank" rel="noopener">
+          <i class="fab fa-facebook-square"></i> Follow us on Facebook!</a>
+        </div>
+        <div class="col-12 col-md-3">
+          <h3 class="headings">Community</h3>
+          <a class="links" href="{% url 'about' %}">About US</a><br><br>
+          <a class="links" href="{% url 'stories' %}">Success Stories</a><br><br>
+          {% if request.user.is_authenticated %}
+            <a class="links" href="{% url 'profile' %}">My Account</a><br><br>
+          {% else %}
+            <a class="links" href="{% url 'account_login' %}">My Account</a><br><br>
+          {% endif %}
+        </div>
+     <div class="row">
+       <div class="col-12 col-md-6">
+         <div id="mc_embed_signup">
           <h3 class="headings">Subscribe!</h3>
           <h4 class="headings">Sign up to our weekly newsletter!</h4>
           <form action="https://herokuapp.us21.list-manage.com/subscribe/post?u=023b2365353d4bb6368cebbbb&amp;id=cabe521066&amp;f_id=008063e1f0" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank">
@@ -62,13 +62,11 @@
             </div>
           </form>
         </div>
-
-        <!--end of mailchimp code-->
-        <div class="col-12">
-          <a href="{% url 'privacy_policy' %}" target="_blank">Privacy Policy</a>
-        </div>
-    
-      </div>
+       </div>
+     </div>
+     <div class="col-12">
+      <a href="{% url 'privacy_policy' %}" target="_blank">Privacy Policy</a>
     </div>
-  </div>
+   </section>
+ </div>
 </footer>

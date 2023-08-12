@@ -190,11 +190,12 @@ a.category-badge > span.badge:hover {
 }
 
 .footer-section {
-    margin: 0;
+    padding: 20px 0 20px 20px;
+    margin-top: 20%;
 }
 
 .home-section {
-    padding-top: 200px;
+    bottom: 10%;
 }
 
 #delivery-banner.row {
