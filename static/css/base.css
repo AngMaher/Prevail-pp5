@@ -3,6 +3,7 @@ html {
 }
 /* main {
     /* min-height: calc(100vh - 164px); 
+    /* min-height: calc(100vh - 164px); 
     height: calc(100vh - 164px);
 } */
 
@@ -13,6 +14,7 @@ body {
     color: #343434;
     font-family: 'Roboto';
     overflow-x: hidden;
+    overflow-y: scroll;
 }
 .footer {
     background-color: #343434;
