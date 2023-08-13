@@ -833,3 +833,35 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 The live deployed application can be found deployed on [Heroku](https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/).
 
 ## References and Credits
+
+
+This project could not have been completed without some help from the internet for various code-snippets to inspire the final project, media to fill the site with and people to support me along the way. In the following sections I want to give credit for my sources and people who've inspired me throughout development.
+
+### Content
+
+I used some online resources to help me overcome some challenges I faced during development and to inspire some elements I used in the site. You can find them below.
+
+| Source | Location | Notes |
+| --- | --- | --- |
+| [Markdown Builder](https://traveltimn.github.io/markdown-builder) | README and TESTING | tool to help generate the Markdown files |
+| [StackOverflow](https://stackoverflow.com/) | Various questions I had over the course of the project | |
+| [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/3adff2bf4a78469db72c5330b1afa836/) | Project foundations | Boutique Ado Walkthrough Project |
+| [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) | Blog | I Think Therefore I Blog Walkthrough Project |
+
+### Media
+
+I used some media found online throughout this project, in particular for product images. You can find the credits for these below.
+
+| Source | Location | Type | Notes |
+| --- | --- | --- | --- |
+| [Canva](https://www.canva.com/) | Facebook | Images | Created a logo I was origanlly going to use on the site but used it on the facebook profile picture |
+| [Amazon](https://www.amazon.co.uk/) | Products | Images | Product images and Product Details |
+
+
+### Acknowledgements
+
+This project tested me to my limits at times and I couldn't have completed it without the amazing people in my life. I want to thank these people for helping and supporting me in getting this project over the line and also for their support throughout this whole course as this is my final project for this diploma.
+
+- I would like to thank my Code Institute mentor, Jubril  for his support, belief and words of encouragement throughout the development of this project and all my previous projects.
+- I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support and answers to many questions.
+- I would like to thank my husband Mark and kids Sophie and Luke for all their encouragement throughout the year.
