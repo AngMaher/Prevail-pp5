@@ -1,9 +1,10 @@
 html {
     height: 100%;
 }
-main {
-    min-height: calc(100vh - 164px);
-}
+/* main {
+    /* min-height: calc(100vh - 164px); 
+    height: calc(100vh - 164px);
+} */
 
 body {
     background: url('/static/media/sneakers-weights-with-copy-space.jpg') no-repeat center center fixed;
