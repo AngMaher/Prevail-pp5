@@ -20,6 +20,10 @@ body {
     bottom: 0;
 }
 
+.footer-section {
+    padding: 20px 0 20px 20px;
+}
+
 .site-logo {
     font-family: 'cinzel decorative';
     font-weight: 600;

@@ -13,10 +13,10 @@ I have validated all of my code using the recommended tools for each language.
 I have used the recommended [HTML W3C Validator](https://validator.w3.org) to validate all of my HTML files.
 
 | Page | Screenshot | Notes |
-| --- | --- | --- | --- |
-| Home | ![screenshot](docs/testing/html/html-home%20(2).png) | Pass: No Errors |
+| --- | --- | --- |
+| Home | ![screenshot](docs/testing/html/html-home.png) | Pass: No Errors |
 | All Products  | ![screenshot](docs/testing/html/html-products.png) | Pass: No Errors |
-| Product Detail | ![screenshot]() | Pass: No Errors |
+| Product Detail | ![screenshot](docs/testing/html/html-product-detail.png) | Pass: No Errors |
 | How it works  | ![screenshot](docs/testing/html/html-about.png) | Pass: No Errors |
 | Success Stories | ![screenshot](docs/testing/html/html-success-story.png) | Pass: No Errors |
 | Story Detail| ![screenshot](docs/testing/html/html-story-detail.png) | Pass: No Errors |
@@ -26,21 +26,22 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Sign Up | ![screenshot](docs/testing/html/html-register.png) | Pass: No Errors |
 | Sign In | ![screenshot](docs/testing/html/html-sign-in.png) | Pass: No Errors |
 | Log Out | ![screenshot](docs/testing/html/html-sign-out.png) | Pass: No Errors |
-| Checkout | ![screenshot]() | () |
-| Checkout Success | ![screenshot]() | Pass: No Errors |
+| Checkout | ![screenshot](docs/testing/html/html-checkout.png) | Pass: No Errors only 1 warning |
+| Checkout Success | ![screenshot](docs/testing/html/html-checkout-success.png) | Pass: No Errors |
 | Profile | ![screenshot](docs/testing/html/html-profile.png) | Pass: No Errors |
 | List Categories  | ![screenshot](docs/testing/html/html-categories.png) | Pass: No Errors |
 | Add Category | ![screenshot](docs/testing/html/html-add-category.png) | Pass: No Errors |
 | Delete Category | ![screenshot](docs/testing/html/html-delete-category.png) | Pass: No Errors |
 | Edit Category | ![screenshot](docs/testing/html/html-edit-category.png) | Pass: No Errors |
-| Delete Product | ![screenshot]() | Pass: No Errors |
+| Delete Product | ![screenshot](docs/testing/html/html-delete-product.png) | Pass: No Errors |
 | Classes | ![screenshot](docs/testing/html/html-classes.png) | Pass: No Errors |
 | Class Detail | ![screenshot](docs/testing/html/html-class-detail.png) | Pass: No Errors |
  Add Class | ![screenshot](docs/testing/html/html-add-class.png) | Pass: No Errors |
 | Edit Class | ![screenshot](docs/testing/html/html-edit-class.png) | Pass: No Errors |
 | Delete Class | ![screenshot](docs/testing/html/html-delete-class.png) | Pass: No Errors |
-| Membership | ![screenshot](docs/testing/html/html-membership.png.png) | Pass: No Errors |
+| Membership | ![screenshot](docs/testing/html/html-membership.png) | Pass: No Errors |
 | Membership form | ![screenshot](docs/testing/html/html-member-form.png) | Pass: No Errors |
+| Footer| ![screenshot](docs/testing/html/html-footer.png) | Pass: No Errors Tested seperate because was having issued with mailchimo code |
 
 
 ### CSS

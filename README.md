@@ -19,6 +19,70 @@ Age range: 30-60
 
 ## Business and Customer Goals
 
+
+## User Stories
+
+To help with the development of this project, I created user stories to map out tasks I needed to achieve in order to build the website to a good standard. I further split these user stories into epics in order to take an agile approach to its development.
+
+View a full list of user stories [here](https://github.com/AngMaher/Prevail-pp5/issues).
+
+### EPIC 1: General Site Functionality
+
+    - As a Site User - for the first time I can see what the site's purpose is so that I can decide whether or not to continue on the site. `(MUST HAVE)`
+    - As a Site User I can easily see the options to navigate around the site so that I can find what I want with ease. `(MUST HAVE)`
+
+### EPIC 2: Shop and Products
+
+    - As a Site User I can view a list of all products so that I can browse through all products. `(MUST HAVE)`
+    - As a Site User I can see a detailed view of the product so that I can get more details before I add to cart. `(MUST HAVE)`
+    - As a Site User I can change the quantity of the product so that I can buy multiple at the same time.`(MUST HAVE)`
+    - As a Site User I can easily filter products into different categories so that I can just look at what I'm interested in. `(SHOULD HAVE)`
+
+
+### EPIC 3: Checkout Bag
+
+    -As a Site User I can delete on item from the checkout bag so that I have an option to change my mind.  `(MUST HAVE)`
+    -As a Site User I can see a breakdown of price so that I can see how much shipping will be before I buy. `(SHOULD HAVE)`
+    - As a Sit User I can see a summary of what I'm buying when I fill in my details so that I can check everything is correct before I commit. `(SHOULD HAVE)`
+    - As a site user I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox  `(MUST HAVE)`
+
+
+### EPIC 4: Subscriptions and Payment
+
+    - As a Site User I can become a Prevail member with ease so that I can quickly sign up without going through the whole website. `(MUST HAVE)`
+
+
+### EPIC 5: Site User Account
+
+    - As a site user I want to be able to create an account on the site so that I can save my billing and shipping details and see a history of my purchases on my account `(MUST HAVE)`
+    - As a registered user I want to be able to edit the details saved to my account so that I can keep my details up to date `(COULD HAVE)`
+
+
+### EPIC 6: Site Admin and Prevail Management
+
+    - As a site admin I want to be able to create new products from the front end so that I can easily add new products to the site `(MUST HAVE)`
+    - As a site admin - Prevail management I want to be able to edit existing products so that I can ensure that all product listings are up to date and accurate `(MUST HAVE)`
+    - As a site admin - Prevail Management I want to be able to delete products from the site so that I can remove any products that are no longer being supplied by the site `(MUST HAVE)`
+ 
+
+### EPIC 7: Class Updates
+
+    - As a prevail member I want to be able to view class on the website so that I can feel part of the community and see how other classes are doing. `(SHOULD HAVE)`
+    - As a Site admin - Prevail Manager I can display a post on the logged-in page of members so that I can display how each class is doing each week. `(SHOULD HAVE)`
+    - As a site admin -prevail manager I want to be able to edit existing updates so that I can fix an error without having to delete and re-do `(COULD HAVE)`
+    - As a site admin - prevail manager I want to be able to delete existing updates so that I can delete them when they get too old. `(SHOULD HAVE)`
+
+### EPIC 8: Success Stories
+
+    - As a Site admin/prevail manager I can display success stories of members so that I can show Site Users how successful our group can be and encourage them to join. `(COULD HAVE)`
+
+
+### EPIC 9: SEO and Marketing
+
+    - As a site user I want to be able to sign up for the site's mailing list so that I can receive offers and news in my inbox `(SHOULD HAVE)`
+    - As a site admin I want to be able to set appropriate keywords on site pages so that I can increase the chances potential customers will find the site when searching to purchase records on Google `(MUST HAVE)`
+
+
 ## UI/UX Desgin
 
 ### Wireframes
@@ -79,6 +143,134 @@ I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my c
 
 
 ### Typography
+
+## Agile Development Process
+
+### GitHub Projects
+
+[GitHub Projects](https://github.com/users/AngMaher/projects/12) served as an Agile tool for this project.
+It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
+
+Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
+
+![screenshot](docs/project-board.png)
+
+### GitHub Issues
+
+[GitHub Issues](https://github.com/AngMaher/Prevail-pp5/issues) served as an another Agile tool.
+There, I used my own **User Story Template** to manage user stories.
+
+It also helped to keep on top of my [milestones](https://github.com/AngMaher/Prevail-pp5/milestones) for the project.
+
+- [Open Issues](https://github.com/AngMaher/Prevail-pp5/issues)
+
+
+- [Closed Issues](https://github.com/AngMaher/Prevail-pp5/issues?q=is%3Aissue+is%3Aclosed)
+
+### MoSCoW Prioritization
+
+I've decomposed my Epics into stories prior to prioritizing and implementing them.
+Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
+
+- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
+- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
+- **Could Have**: has small impact if left out (*20% of stories*)
+- **Won't Have**: not a priority for this iteration
+
+## Ecommerce Business Model
+
+This site sells goods to individual customers, and therefore follows a `Business to Customer` model.
+It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
+such as monthly/annual subscriptions.
+
+It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
+
+Social media can potentially build a community of users around the business, and boost site visitor numbers,
+especially when using larger platforms such a Facebook.
+
+A newsletter list can be used by the business to send regular messages to site users.
+For example, what items are on special offer, new items in stock,
+updates to business hours, notifications of events, and much more!
+
+## Search Engine Optimization (SEO) & Social Media Marketing
+
+### Keywords
+
+I've identified some appropriate keywords to align with my site, that should help users
+when searching online to find my page easily from a search engine.
+This included a series of the following keyword types
+
+- Short-tail (head terms) keywords
+- Long-tail keywords
+
+I also played around with [Word Tracker](https://www.wordtracker.com) a bit
+to check the frequency of some of my site's primary keywords.
+
+### Sitemap
+
+I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
+This was generated using my deployed site URL: https://retro-reboot.herokuapp.com
+
+After it finished crawling the entire site, it created a
+[sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
+
+### Robots
+
+I've created the [robots.txt](robots.txt) file at the root-level.
+Inside, I've included the default settings:
+
+```
+User-agent: *
+Disallow:
+Sitemap: https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/sitemap.xml
+```
+
+Further links for future implementation:
+- [Google search console](https://search.google.com/search-console)
+- [Creating and submitting a sitemap](https://developers.google.com/search/docs/advanced/sitemaps/build-sitemap)
+- [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
+- [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
+
+### Social Media Marketing
+
+Creating a strong social base (with participation) and linking that to the business site can help drive sales.
+Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
+
+I've created a Facebook business account using facebook,here is a link to my facebook business account
+[Facebook](https://www.facebook.com/profile.php?id=100095513502528)
+
+![screenshot](docs/readme/facebook1.png)
+![screenshot](docs/readme/facebook2.png)
+![screenshot](docs/readme/facebook-post.png)
+
+
+### Newsletter Marketing
+
+I have incorporate a newsletter sign-up form on my application, to allow users to supply their
+email address if they are interested in learning more about what the business has to offer.
+
+I created a custom newsletter app in my project with a custom NewsletterSignup model and added a form to the site's footer to collect user email addresses 
+
+Newsletter model:
+
+```python
+class NewsletterSignup(models.Model):
+    email = models.EmailField(unique=True, null=False, blank=False)
+
+def __str__(self):
+    return self.email
+```
+
+I set the email address to be unique to avoid users signing up multiple times with the same email address. If a user tries to sign up twice with the same address they will be shown a message letting them know they've already signed up.
+
+Once a user signs up, I used the `send_mail()` functionality in the `webhook_handler.py` file to trigger a welcome email for the user to acknowledge that they've successfully signed up for the newsletter.
+
+In this welcome newsletter, I've included a special discount code to entice sign ups to purchase on the site.
+
+## Testing
+
+For all testing, please refer to the [TESTING.md](TESTING.md) file.
+
 
 ## Features
 
@@ -197,67 +389,6 @@ I created an entity relationship diagram using [lucid.app](https://lucid.app/) T
 ![database schema](/docs/readme/db_schema.png)
 
 
-## User Stories
-
-To help with the development of this project, I created user stories to map out tasks I needed to achieve in order to build the website to a good standard. I further split these user stories into epics in order to take an agile approach to its development.
-
-View a full list of user stories [here](https://github.com/AngMaher/Prevail-pp5/issues).
-
-### EPIC 1: General Site Functionality
-
-    - As a Site User - for the first time I can see what the site's purpose is so that I can decide whether or not to continue on the site. `(MUST HAVE)`
-    - As a Site User I can easily see the options to navigate around the site so that I can find what I want with ease. `(MUST HAVE)`
-
-### EPIC 2: Shop and Products
-
-    - As a Site User I can view a list of all products so that I can browse through all products. `(MUST HAVE)`
-    - As a Site User I can see a detailed view of the product so that I can get more details before I add to cart. `(MUST HAVE)`
-    - As a Site User I can change the quantity of the product so that I can buy multiple at the same time.`(MUST HAVE)`
-    - As a Site User I can easily filter products into different categories so that I can just look at what I'm interested in. `(SHOULD HAVE)`
-
-
-### EPIC 3: Checkout Bag
-
-    -As a Site User I can delete on item from the checkout bag so that I have an option to change my mind.  `(MUST HAVE)`
-    -As a Site User I can see a breakdown of price so that I can see how much shipping will be before I buy. `(SHOULD HAVE)`
-    - As a Sit User I can see a summary of what I'm buying when I fill in my details so that I can check everything is correct before I commit. `(SHOULD HAVE)`
-    - As a site user I want to be able to receive an order confirmation email after I purchase from the shop so that I can have a record of what I've purchased in my email inbox  `(MUST HAVE)`
-
-
-### EPIC 4: Subscriptions and Payment
-
-    - As a Site User I can become a Prevail member with ease so that I can quickly sign up without going through the whole website. `(MUST HAVE)`
-
-
-### EPIC 5: Site User Account
-
-    - As a site user I want to be able to create an account on the site so that I can save my billing and shipping details and see a history of my purchases on my account `(MUST HAVE)`
-    - As a registered user I want to be able to edit the details saved to my account so that I can keep my details up to date `(COULD HAVE)`
-
-
-### EPIC 6: Site Admin and Prevail Management
-
-    - As a site admin I want to be able to create new products from the front end so that I can easily add new products to the site `(MUST HAVE)`
-    - As a site admin - Prevail management I want to be able to edit existing products so that I can ensure that all product listings are up to date and accurate `(MUST HAVE)`
-    - As a site admin - Prevail Management I want to be able to delete products from the site so that I can remove any products that are no longer being supplied by the site `(MUST HAVE)`
- 
-
-### EPIC 7: Class Updates
-
-    - As a prevail member I want to be able to view class on the website so that I can feel part of the community and see how other classes are doing. `(SHOULD HAVE)`
-    - As a Site admin - Prevail Manager I can display a post on the logged-in page of members so that I can display how each class is doing each week. `(SHOULD HAVE)`
-    - As a site admin -prevail manager I want to be able to edit existing updates so that I can fix an error without having to delete and re-do `(COULD HAVE)`
-    - As a site admin - prevail manager I want to be able to delete existing updates so that I can delete them when they get too old. `(SHOULD HAVE)`
-
-### EPIC 8: Success Stories
-
-    - As a Site admin/prevail manager I can display success stories of members so that I can show Site Users how successful our group can be and encourage them to join. `(COULD HAVE)`
-
-
-### EPIC 9: SEO and Marketing
-
-    - As a site user I want to be able to sign up for the site's mailing list so that I can receive offers and news in my inbox `(SHOULD HAVE)`
-    - As a site admin I want to be able to set appropriate keywords on site pages so that I can increase the chances potential customers will find the site when searching to purchase records on Google `(MUST HAVE)`
 
 ## Tools & Technologies & Libraries Used
 
