@@ -1,11 +1,6 @@
 html {
     height: 100%;
 }
-/* main {
-    /* min-height: calc(100vh - 164px); 
-    /* min-height: calc(100vh - 164px); 
-    height: calc(100vh - 164px);
-} */
 
 body {
     background: url('/static/media/sneakers-weights-with-copy-space.jpg') no-repeat center center fixed;
@@ -169,7 +164,11 @@ body {
 }
 
 .card-img-top {
-    height: 300px;
+    height: 350px;
+}
+
+.card-img-top-story {
+    height: 480px;
 }
 
 a.category-badge > span.badge:hover {
@@ -289,14 +288,6 @@ a.category-badge > span.badge:hover {
     width: 600px;
 }
    
-/* -------------------------------- Media Queries */
-
-/* Slightly larger container on xl screens */
-@media (min-width: 1200px) {
-  .container {
-    max-width: 80%;
-  }
-}
 
 /* Allauth form formatting */
 
@@ -377,6 +368,7 @@ a.category-badge > span.badge:hover {
     border-color: #dc3545;
 }
 
+/* for displaying the success stories detail page*/
 .weight-banner {
     height: 100px;
     padding: 0 50px;
@@ -408,6 +400,15 @@ a.category-badge > span.badge:hover {
     height: 100px;
     padding: 0 50px;
 }
+
+/* -------------------------------- Media Queries */
+
+/* Slightly larger container on xl screens */
+@media (min-width: 1200px) {
+    .container {
+      max-width: 80%;
+    }
+  }
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {

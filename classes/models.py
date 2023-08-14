@@ -2,6 +2,7 @@ from django.db import models
 
 
 class Classes(models.Model):
+    """Model to hold information for each class"""
     leader_name = models.CharField(max_length=200)
     class_county = models.CharField(max_length=50)
     class_town = models.CharField(max_length=50)

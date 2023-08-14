@@ -131,6 +131,7 @@
                 </form>
             </div>
         </div>
+        <!--Overlay with spinner for when card is processing-->
 <div id="loading-overlay">
     <h1 class="text-light logo-font loading-spinner">
         <span class="icon">
@@ -139,7 +140,7 @@
     </h1>
 </div>
 {% endblock %}
-
+<!--includes Javascipt for stripe-->
 {% block postloadjs %}
     {{ block.super }}
     {{ stripe_public_key|json_script:"id_stripe_public_key" }}

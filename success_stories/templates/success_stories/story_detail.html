@@ -37,20 +37,20 @@
     </div>
     <div class="row w-lg-75 image-banner">
         <div class="col-6">
-            <div class="image-container my-5">
+            <div class="my-5">
                 {% if story.image_before %}
-                    <img class="card-img-top img-fluid img-fluid w-100" src="{{ story.image_before.url }}" alt="{{ story.name }}">
+                    <img class="card-img-top-story img-fluid" src="{{ story.image_before.url }}" alt="{{ story.name }}">
                 {% else %}
-                    <img class="card-img-top img-fluid img-fluid w-100" src="{{ MEDIA_URL }}noimage.png" alt="{{ story.name }}">
+                    <img class="card-img-top-story img-fluid" src="{{ MEDIA_URL }}before-placeholder.jpg" alt="{{ story.name }}">
                 {% endif %}
             </div>
         </div> 
         <div class="col-6">
             <div class="image-container my-5">
                 {% if story.image_after %}
-                    <img class="card-img-top img-fluid" src="{{ story.image_after.url }}" alt="weight loss success stories {{ story.name }}">
+                    <img class="card-img-top-story img-fluid" src="{{ story.image_after.url }}" alt="weight loss success stories {{ story.name }}">
                 {% else %}
-                    <img class="card-img-top img-fluid" src="{{ MEDIA_URL }}noimage.png" alt="weight loss success stories {{ story.name }}">
+                    <img class="card-img-top-story img-fluid" src="{{ MEDIA_URL }}after-placeholder.jpg" alt="weight loss success stories {{ story.name }}">
                 {% endif %}
             </div>
         </div>

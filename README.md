@@ -221,7 +221,8 @@ Inside, I've included the default settings:
 
 ```
 User-agent: *
-Disallow:
+Disallow: /accounts/
+Disallow: /checkout/
 Sitemap: https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/sitemap.xml
 ```
 
@@ -274,7 +275,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Features
 
-
+N
 
 ## Database Design
 
@@ -707,73 +708,6 @@ As a backup, in case users prematurely close the purchase-order page during paym
 	- `STRIPE_WH_SECRET` = Signing Secret (Wehbook) Key (starts with **wh**)
 
 
-## Agile Development Process
-
-### GitHub Projects
-
-[GitHub Projects](https://github.com/users/AngMaher/projects/12) served as an Agile tool for this project.
-It isn't a specialized tool, but with the right tags and project creation/issue assignments, it can be made to work.
-
-Through it, user stories, issues, and milestone tasks were planned, then tracked on a weekly basis using the basic Kanban board.
-
-![screenshot](documentation/gh-projects-board.png)
-
-### GitHub Issues
-
-[GitHub Issues](https://github.com/AngMaher/Prevail-pp5/issues) served as an another Agile tool.
-There, I used my own **User Story Template** to manage user stories.
-
-It also helped to keep on top of my [milestones](https://github.com/AngMaher/Prevail-pp5/milestones) for the project.
-
-- [Open Issues]()
-
-    ![screenshot]()
-
-- [Closed Issues]()
-
-    ![screenshot]()
-
-    ![screenshot]()
-
-### MoSCoW Prioritization
-
-I've decomposed my Epics into stories prior to prioritizing and implementing them.
-Using this approach, I was able to apply the MoSCow prioritization and labels to my user stories within the Issues tab.
-
-- **Must Have**: guaranteed to be delivered (*max 60% of stories*)
-- **Should Have**: adds significant value, but not vital (*the rest ~20% of stories*)
-- **Could Have**: has small impact if left out (*20% of stories*)
-- **Won't Have**: not a priority for this iteration
-
-## Ecommerce Business Model
-
-This site sells goods to individual customers, and therefore follows a `Business to Customer` model.
-It is of the simplest **B2C** forms, as it focuses on individual transactions, and doesn't need anything
-such as monthly/annual subscriptions.
-
-It is still in its early development stages, although it already has a newsletter, and links for social media marketing.
-
-Social media can potentially build a community of users around the business, and boost site visitor numbers,
-especially when using larger platforms such a Facebook.
-
-A newsletter list can be used by the business to send regular messages to site users.
-For example, what items are on special offer, new items in stock,
-updates to business hours, notifications of events, and much more!
-
-## Search Engine Optimization (SEO) & Social Media Marketing
-
-### Keywords
-
-I've identified some appropriate keywords to align with my site, that should help users
-when searching online to find my page easily from a search engine.
-This included a series of the following keyword types
-
-- Short-tail (head terms) keywords
-- Long-tail keywords
-
-I also used [Word Tracker](https://www.wordtracker.com)
-to check the frequency of some of my site's primary keywords.
-
 ### Sitemap
 
 I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
@@ -799,31 +733,6 @@ Further links for future implementation:
 - [Managing your sitemaps and using sitemaps reports](https://support.google.com/webmasters/answer/7451001)
 - [Testing the robots.txt file](https://support.google.com/webmasters/answer/6062598)
 
-### Social Media Marketing
-
-Creating a strong social base (with participation) and linking that to the business site can help drive sales.
-Using more popular providers with a wider user base, such as Facebook, typically maximizes site views.
-
-I've created a mockup Facebook business account using facebook, here is a link to the page.
-[facebook page](https://www.facebook.com/profile.php?id=100095513502528)
-
-Here are some screenshots of the page.
-![screenshot]()
-![screenshot]()
-![screenshot]()
-
-### Newsletter Marketing
-
-I have incorporate a newsletter sign-up form on my application, to allow users to supply their
-email address if they are interested in learning more about what the business has to offer.
-
-
-
-I set the email address to be unique to avoid users signing up multiple times with the same email address. If a user tries to sign up twice with the same address they will be shown a message letting them know they've already signed up.
-
-Once a user signs up, I used the `send_mail()` functionality in the `webhook_handler.py` file to trigger a welcome email for the user to acknowledge that they've successfully signed up for the newsletter.
-
-In this welcome newsletter, I've included a special discount code to entice sign ups to purchase on the site.
 
 ## Testing
 

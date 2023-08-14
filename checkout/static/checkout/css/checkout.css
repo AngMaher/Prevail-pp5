@@ -1,3 +1,4 @@
+/* ---------------------------------------------css for srtipe */
 .StripeElement,
 .stripe-style-input {
     box-sizing: border-box;
@@ -45,7 +46,7 @@ select:invalid,
 select option[value=""] {
     color: #aab7c4 !important;
 }
-
+/* -------------------------------------- Overlay and Spinner on checkout page */
 #loading-overlay {
     display: none;
     position: fixed;

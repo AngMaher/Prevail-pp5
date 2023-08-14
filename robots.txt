@@ -1,3 +1,4 @@
 User-agent: *
-Disallow:
+Disallow: /accounts/
+Disallow: /checkout/
 Sitemap: https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/sitemap.xml
