@@ -38,6 +38,10 @@ body {
     padding: 0;
 }
 
+#topnav {
+    margin-left: 0;
+}
+
 /* automatically show menu on navbar when mouse over */
 .dropdown:hover .dropdown-menu {
     display: block;
