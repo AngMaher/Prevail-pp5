@@ -12,6 +12,11 @@ body {
     overflow-y: scroll;
     margin-right: 0;
 }
+
+main {
+    height: min-content(100vh - 164px);
+}
+
 .footer {
     background-color: #343434;
     color:#fff;

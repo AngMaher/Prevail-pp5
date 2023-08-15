@@ -261,7 +261,7 @@ I set the email address to be unique to avoid users signing up multiple times wi
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 
-## Features
+## Existing Features
 
 ### Navbar
 
@@ -287,7 +287,11 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 - Each product shows a rating.
 - Each product also shows the catrgory and when clicked brings you to a list of products for that category.
 
+### Profile Page
 
+- This feature allows a user to check and update their details
+- Its also shoes them a list of all previous orders
+- They can click any order and view 
 
 
 
