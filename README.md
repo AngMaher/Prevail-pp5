@@ -321,6 +321,15 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 - Provides class information for user to pick class that best suites them
 
+## Future Features
+
+This site has so much opportunity to grow and develop.  If time wasn't to tight for this project, I would have included some of the following features.
+
+- A subscription service, where the user can pay up to 6 months in advance for classes.
+- A section on the site that could be a forum. A community where leaders can post information on classes and recipes and also user can post and comment and connect to other users and leaders.
+- Also a tracking system could be brought in where a user can see their weight each week and how their goals are going.
+- Also the feature that I didn't complete in my project issues, classes can submit a post avdising how the class done each week and members can see and comment.
+
 ## Database Design
 
 ### Models
