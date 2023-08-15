@@ -10,14 +10,14 @@ body {
     font-family: 'Roboto';
     overflow-x: hidden;
     overflow-y: scroll;
-    margin-left: 0;
+    margin-right: 0;
 }
 .footer {
     background-color: #343434;
     color:#fff;
     position: relative;
     bottom: 0;
-    margin-left: 0;
+    margin-right: 0;
 }
 
 .site-logo {
