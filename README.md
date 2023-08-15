@@ -275,25 +275,51 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ### Footer
 
+![shop](docs/readme/features-footer.png)
+
 - The footer section has links to the main areas of the site.
 - It has a link to the facebook business page for prevail weight loss.
 - It has a mailchimp subscribe form for users to recieve newsletters.
 - It has a link to the companies privacy policy.
 
-### Products Page
+### Shop
 
-- This page has a search dropdown box so users can filter in many different ways to find the products that they need.
+![shop](docs/readme/features-shop.png)
+
+- The shop sells things to aid in the weight loss journey.
+- Future development could have paying got classes in bulk etc online
+- The shop has a search dropdown box so users can filter in many different ways to find the products that they need.
 - Each product is displayed on a card, with a link to the product detail through the image and the name.
 - Each product shows a rating.
 - Each product also shows the catrgory and when clicked brings you to a list of products for that category.
 
-### Profile Page
+### Profile
 
-- This feature allows a user to check and update their details
-- Its also shoes them a list of all previous orders
-- They can click any order and view 
+![Profile](docs/readme/feature-profiles.png)
 
+- This feature allows a user to check and update their details.
+- Its also shows them a list of all previous orders.
+- They can click any order and view a summary of that order
 
+### User Authentication 
+
+![Allauth](docs/readme/features-allauth.png)
+
+- Alluth was styled to fit better in with the site and the site logo was also added
+
+### bag
+
+![Bag](docs/readme/features-bag.png)
+
+- Free delivery threshold calculated and free over 50.
+- bottons to remove item from bag or update the quantity.
+- option to cancel or proceed.
+
+### Class
+
+![Class Info](docs/readme/features-class-info.png)
+
+- Provides class information for user to pick class that best suites them
 
 ## Database Design
 

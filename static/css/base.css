@@ -45,6 +45,9 @@ main {
     padding: 0;
 }
 
+.row {
+    margin: 0;
+}
 
 /* automatically show menu on navbar when mouse over */
 .dropdown:hover .dropdown-menu {
