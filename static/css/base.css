@@ -10,12 +10,14 @@ body {
     font-family: 'Roboto';
     overflow-x: hidden;
     overflow-y: scroll;
+    margin-left: 0;
 }
 .footer {
     background-color: #343434;
     color:#fff;
     position: relative;
     bottom: 0;
+    margin-left: 0;
 }
 
 .site-logo {
@@ -38,9 +40,6 @@ body {
     padding: 0;
 }
 
-#topnav {
-    margin-left: 0;
-}
 
 /* automatically show menu on navbar when mouse over */
 .dropdown:hover .dropdown-menu {
