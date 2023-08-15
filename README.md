@@ -1,10 +1,19 @@
 # Prevail Weight loss Group
 
+Prevail is a weight loss group that has many classes throughout Ireland. Members meet weekly and weigh-in and follow
+a plan to get healthier and lose weight. They have a strong community base and the weekly classes are filled with talks 
+and advise and friendship.  This website is an extention of this, a place they can find information about the classes and
+a place they can purchase items that maybe talked about in class and will help with their journey. In furture upudates 
+they will bring theat community online, with a fourm for all memebers to connect.  This is only the beginning.
+
 ![responsive](/docs/readme/responsive.png)
 
 ## Purpose and Goal
 
-## Target Audience
+Prevail Weight Loss is a health group, focused on healthy eating and losing weight. The site provides information about the
+group but also is a place that the users can purchase items that can help with their journey. When the brand grows the site
+can be used to sell their own branded goods.
+
 
 ### Demographics
 Gender: Female
@@ -323,12 +332,12 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Future Features
 
-This site has so much opportunity to grow and develop.  If time wasn't to tight for this project, I would have included some of the following features.
+This site has so much opportunity to grow and develop.  If time wasn't so tight for this project, I would have included some of the following features.
 
 - A subscription service, where the user can pay up to 6 months in advance for classes.
 - A section on the site that could be a forum. A community where leaders can post information on classes and recipes and also user can post and comment and connect to other users and leaders.
 - Also a tracking system could be brought in where a user can see their weight each week and how their goals are going.
-- Also the feature that I didn't complete in my project issues, classes can submit a post avdising how the class done each week and members can see and comment.
+- Also the feature the I didn't complete in my project issues, class leaders can submit a post advising how the class done each week and members can see and comment.
 
 ## Database Design
 
@@ -460,10 +469,8 @@ I created an entity relationship diagram using [lucid.app](https://lucid.app/) T
 - [PostgreSQL](https://www.postgresql.org) used as the relational database management.
 - [ElephantSQL](https://www.elephantsql.com) used as the Postgres database.
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
-- [Cloudinary](https://cloudinary.com) used for online static file storage.
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
-
 
 
 ***
@@ -809,6 +816,8 @@ I used some online resources to help me overcome some challenges I faced during 
 | [StackOverflow](https://stackoverflow.com/) | Various questions I had over the course of the project | |
 | [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+EA101+2021_T1/courseware/eb05f06e62c64ac89823cc956fcd8191/3adff2bf4a78469db72c5330b1afa836/) | Project foundations | Boutique Ado Walkthrough Project |
 | [Code Institute](https://learn.codeinstitute.net/courses/course-v1:CodeInstitute+FST101+2021_T1/courseware/b31493372e764469823578613d11036b/fe4299adcd6743328183aab4e7ec5d13/) | Blog | I Think Therefore I Blog Walkthrough Project |
+| [Unislim](https://unislim.com/) | Website/business | Unislim was the inspiration for this site and referenced the site a lot and used some of the stories from it. |
+
 
 ### Media
 
@@ -827,3 +836,4 @@ This project tested me to my limits at times and I couldn't have completed it wi
 - I would like to thank my Code Institute mentor, Jubril  for his support, belief and words of encouragement throughout the development of this project and all my previous projects.
 - I would like to thank the [Code Institute Slack community](https://code-institute-room.slack.com) for the moral support and answers to many questions.
 - I would like to thank my husband Mark and kids Sophie and Luke for all their encouragement throughout the year.
+

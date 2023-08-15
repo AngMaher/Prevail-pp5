@@ -408,7 +408,9 @@ The following are user stories I wasn't able to implement
 | --- | --- | --- |
 | Footer | I couldnt get the footer to stay at the bottom the page when different pages had different heights. | min-height: cal(100vh - 164px); in css file |
 | Spinner on checkout | Couldnt get the spinner in the checkout to work | class on one div had underscore instead of dash |
+| the credit card stop showing up | credit card payment failed to show after working all along. | after a  lot of aid from tutors and mentor finally found that the link for jquery in the base template had been deleted and we think might be connected to the next problem,and was unsaved when gitpod failed. |
+| local payments stopped working | payments on the local server stopped working but continueed to work on heroku | after going back over my commits I realised on the day they stopped working gitpod had stalled and kicked me out. When I logged back in my gitpod address had changed from eu-102 to eu-103, I had changed the new address in the allowed hosts but forgot to change it in stripe for the payments. |
 
 ## Unfixed Bugs
 
-
+- only one main issue with the site and thats the photos for the success stories.  I had the perfect pictures all set up and received an email from AWS advising that I was going over 2000 limit, after investigating I found the photos for the success stories were too big, unwilling to pay for the service I decided to delete them. I then start searching for before and afer photos for free and literally could not find anything good to use. The two I found for the placeholder are not at all what works but due to the time constraints I did not have the time to focus on this one issue.  If I was to do this for a real business I would look into alternitive options for storing photos, and take the photos myself.
