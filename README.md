@@ -250,23 +250,11 @@ I've created a Facebook business account using facebook,here is a link to my fac
 I have incorporate a newsletter sign-up form on my application, to allow users to supply their
 email address if they are interested in learning more about what the business has to offer.
 
-I created a custom newsletter app in my project with a custom NewsletterSignup model and added a form to the site's footer to collect user email addresses 
+I used the service [mailchimp](https://mailchimp.com/) to create a subscribe form and to handle emails I have added the form to the site's footer to collect user email addresses and names so I can make the emails more personal.
 
-Newsletter model:
-
-```python
-class NewsletterSignup(models.Model):
-    email = models.EmailField(unique=True, null=False, blank=False)
-
-def __str__(self):
-    return self.email
-```
 
 I set the email address to be unique to avoid users signing up multiple times with the same email address. If a user tries to sign up twice with the same address they will be shown a message letting them know they've already signed up.
 
-Once a user signs up, I used the `send_mail()` functionality in the `webhook_handler.py` file to trigger a welcome email for the user to acknowledge that they've successfully signed up for the newsletter.
-
-In this welcome newsletter, I've included a special discount code to entice sign ups to purchase on the site.
 
 ## Testing
 
@@ -275,7 +263,33 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ## Features
 
-N
+### Navbar
+
+![NavBar](docs/readme/features-navbar.png)
+
+- Here the user has access to all the products in the store.
+- Using a drop down menu, they can filter what they are looking for.
+- There is a search box to help user to search items.
+- Icon for the account, Login, Register or Profile for user and Admin Managemnt for oemer of the shop.
+- Bag Icon that can be accessed at any part of the site.
+
+### Footer
+
+- The footer section has links to the main areas of the site.
+- It has a link to the facebook business page for prevail weight loss.
+- It has a mailchimp subscribe form for users to recieve newsletters.
+- It has a link to the companies privacy policy.
+
+### Products Page
+
+- This page has a search dropdown box so users can filter in many different ways to find the products that they need.
+- Each product is displayed on a card, with a link to the product detail through the image and the name.
+- Each product shows a rating.
+- Each product also shows the catrgory and when clicked brings you to a list of products for that category.
+
+
+
+
 
 ## Database Design
 

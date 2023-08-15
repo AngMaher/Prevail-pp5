@@ -22,7 +22,7 @@
     </div>
     <br><br>
     <div class="row">
-        <div class="col-12 col-lg-6 offset-lg-3">
+        <div class="col-12 col-lg-6 offset-lg-3 font-weight-bold">
             <form method="POST" action="{% url 'edit_story' story.id %}" class="form mb-2" enctype="multipart/form-data">
                 {% csrf_token %}
                 {{ form | crispy }}

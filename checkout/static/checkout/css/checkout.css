@@ -46,6 +46,7 @@ select:invalid,
 select option[value=""] {
     color: #aab7c4 !important;
 }
+
 /* -------------------------------------- Overlay and Spinner on checkout page */
 #loading-overlay {
     display: none;
