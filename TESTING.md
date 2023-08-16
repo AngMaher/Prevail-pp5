@@ -124,7 +124,7 @@ I've tested my deployed project on multiple browsers to check for compatibility 
 | Browser | Screenshot | Notes |
 | --- | --- | --- |
 | Chrome | ![screenshot](docs/testing/browsers/chrome.png) | Works as expected |
-| Safari | ![screenshot]() | Works as expected |
+| Safari | ![screenshot](docs/readme/safari.png) | Works as expected |
 | Edge | ![screenshot](docs/testing/browsers/edge.png) | Works as expected |
 
 

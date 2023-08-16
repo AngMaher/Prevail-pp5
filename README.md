@@ -324,7 +324,10 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 
 ![Class Info](docs/readme/features-class-info.png)
 
+![Class List](docs/readme/class-list.png)
+
 - Provides class information for user to pick class that best suites them
+- Also a list of classes, where if admin can edit and delete
 
 ## Future Features
 
