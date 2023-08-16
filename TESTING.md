@@ -36,7 +36,7 @@ I have used the recommended [HTML W3C Validator](https://validator.w3.org) to va
 | Delete Product | ![screenshot](docs/testing/html/html-delete-product.png) | Pass: No Errors |
 | Classes | ![screenshot](docs/testing/html/html-classes.png) | Pass: No Errors |
 | Class Detail | ![screenshot](docs/testing/html/html-class-detail.png) | Pass: No Errors |
- Add Class | ![screenshot](docs/testing/html/html-add-class.png) | Pass: No Errors |
+| Add Class | ![screenshot](docs/testing/html/html-add-class.png) | Pass: No Errors |
 | Edit Class | ![screenshot](docs/testing/html/html-edit-class.png) | Pass: No Errors |
 | Delete Class | ![screenshot](docs/testing/html/html-delete-class.png) | Pass: No Errors |
 | Membership | ![screenshot](docs/testing/html/html-membership.png) | Pass: No Errors |
@@ -60,7 +60,6 @@ I have used the recommended [JShint Validator](https://jshint.com) to validate a
 
 | File | Screenshot | Notes |
 | --- | --- | --- |
-| countryfields.js | ![screenshot]() | Pass: No Errors |
 | add_product.html (postloadjs) | ![screenshot](docs/testing/js/js-add-product.png) | Pass: No Errors |
 | edit_product.html (postloadjs) | ![screenshot](docs/testing/js/js-edit-product.png) | Pass: No Errors |
 | products.html (postloadjs) | ![screenshot](docs/testing/js/js-products-products.png) | Pass: No Errors |

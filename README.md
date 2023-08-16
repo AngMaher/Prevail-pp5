@@ -1,12 +1,14 @@
 # Prevail Weight loss Group
 
+![responsive](/docs/readme/responsive.png)
+
 Prevail is a weight loss group that has many classes throughout Ireland. Members meet weekly and weigh-in and follow
 a plan to get healthier and lose weight. They have a strong community base and the weekly classes are filled with talks 
 and advise and friendship.  This website is an extention of this, a place they can find information about the classes and
-a place they can purchase items that maybe talked about in class and will help with their journey. In furture upudates 
-they will bring theat community online, with a fourm for all memebers to connect.  This is only the beginning.
+a place they can purchase items that maybe talked about in class and will help with their journey. In furture updates 
+they will bring that community online, with a fourm for all members to connect, and track.  This is only the beginning...
 
-![responsive](/docs/readme/responsive.png)
+The live deployed application can be found deployed on [Heroku](https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/)
 
 ## Purpose and Goal
 
@@ -22,7 +24,7 @@ Age range: 30-60
 ### Persona of typical User.
 - I believe the persona of the user of this site is mainly female with an age range of approximately 30 to 60 years of age. 
 - They are looking to get healthier and want to have support, inspiration and guidance while doing so.
-- They want a physical class or online class but an easy way of paying for it.
+- They want a physical class but somewhere to buy equipement to help with their journey.
 - They want to be able to purchase the merchandise from the class online.
 
 
@@ -139,7 +141,7 @@ View a full list of user stories [here](https://github.com/AngMaher/Prevail-pp5/
 
 ### Color Scheme
 
-I decided to keep the website bright with a main colour of blue throughout the site. 
+I decided to keep the website clean with main colours of pink and grey. 
 
   - #d5a6bd - Pink Lavender as the contrasting headings and boxes to break up the page.
   - #343434 - Jet, this colour is used a on the majority of the text throughout the site, and the footer, Navbar, Buttons.
@@ -149,9 +151,6 @@ I decided to keep the website bright with a main colour of blue throughout the s
 ![colours used](/docs/readme/Project-5-Colours.png)
 
 I used [coolors.co](https://coolors.co/343434-5799e1-fdf8f4-e64141) to pick my colours.
-
-
-### Typography
 
 ## Agile Development Process
 
@@ -218,7 +217,7 @@ to check the frequency of some of my site's primary keywords.
 ### Sitemap
 
 I've used [XML-Sitemaps](https://www.xml-sitemaps.com) to generate a sitemap.xml file.
-This was generated using my deployed site URL: https://retro-reboot.herokuapp.com
+This was generated using my deployed site URL: https://prevail-weight-loss-fa257f0d4d7b.herokuapp.com/
 
 After it finished crawling the entire site, it created a
 [sitemap.xml](sitemap.xml) which I've downloaded and included in the repository.
@@ -262,9 +261,6 @@ email address if they are interested in learning more about what the business ha
 I used the service [mailchimp](https://mailchimp.com/) to create a subscribe form and to handle emails I have added the form to the site's footer to collect user email addresses and names so I can make the emails more personal.
 
 
-I set the email address to be unique to avoid users signing up multiple times with the same email address. If a user tries to sign up twice with the same address they will be shown a message letting them know they've already signed up.
-
-
 ## Testing
 
 For all testing, please refer to the [TESTING.md](TESTING.md) file.
@@ -279,7 +275,7 @@ For all testing, please refer to the [TESTING.md](TESTING.md) file.
 - Here the user has access to all the products in the store.
 - Using a drop down menu, they can filter what they are looking for.
 - There is a search box to help user to search items.
-- Icon for the account, Login, Register or Profile for user and Admin Managemnt for oemer of the shop.
+- Icon for the account, Login, Register or Profile for user and Admin Managemnt for owner of the shop.
 - Bag Icon that can be accessed at any part of the site.
 
 ### Footer
@@ -457,7 +453,6 @@ I created an entity relationship diagram using [lucid.app](https://lucid.app/) T
 
 - [HTML](https://en.wikipedia.org/wiki/HTML) used for the main site content.
 - [CSS](https://en.wikipedia.org/wiki/CSS) used for the main site design and layout.
-- [CSS :root variables](https://www.w3schools.com/css/css3_variables.asp) used for reusable styles throughout the site.
 - [JavaScript](https://www.javascript.com) used for user interaction on the site.
 - [Python](https://www.python.org) used as the back-end programming language.
 - [Git](https://git-scm.com) used for version control. (`git add`, `git commit`, `git push`)
@@ -471,6 +466,8 @@ I created an entity relationship diagram using [lucid.app](https://lucid.app/) T
 - [Heroku](https://www.heroku.com) used for hosting the deployed back-end site.
 - [Stripe](https://stripe.com) used for online secure payments of ecommerce products/services.
 - [AWS S3](https://aws.amazon.com/s3) used for online static file storage.
+- [mailchimp](https://mailchimp.com/) used for newsletter on the site.
+- [summernote](https://summernote.org/) used on the product detail.
 
 
 ***
